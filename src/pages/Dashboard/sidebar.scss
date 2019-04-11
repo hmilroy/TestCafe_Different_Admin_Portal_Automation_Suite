@@ -1,0 +1,65 @@
+@mixin iconStyles($xPosition) {
+  &.properties {
+    background-position: $xPosition 0;
+  }
+  &.maintenance {
+    background-position: $xPosition -100%;
+  }
+  &.renewals {
+    background-position: $xPosition -200%;
+  }
+  &.reports {
+    background-position: $xPosition -200%;
+  }
+  &.holdings {
+    background-position: $xPosition -300%;
+  }
+  &.transactions {
+    background-position: $xPosition -400%;
+  }
+}
+
+$numberOfIcons: 6;
+
+.side-dashboard-icon {
+  position: relative;
+  top: 4px;
+  $size: 30px;
+  width: $size;
+  height: $size;
+  display: inline-block;
+  background-image: url('../../assets/images/dashboard-side-icons-6.png');
+  background-size: 200% 100% * $numberOfIcons;
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  &--active.side-dashboard-icon {
+    @include iconStyles(100%);
+  }
+  @include iconStyles(0);
+}
+
+.dashbaord-side-link:hover {
+  .side-dashboard-icon {
+    @include iconStyles(100%);
+  }
+}
+.side-icon-bar a.dashbaord-side-link {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  text-decoration: none;
+  padding: 8px 4px;
+}
+
+.dashboard-sidebar {
+  position: fixed;
+  top: 59px;
+  left: 0;
+  width: 50px;
+  background-color: #151e39;
+  border-right: solid 2px #979797;
+  height: 105%;
+  z-index: 1000;
+}

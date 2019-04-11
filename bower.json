@@ -1,0 +1,20 @@
+{
+  "name": "admin-frontend",
+  "description": "different admin frontend app - reactjs",
+  "main": "index.js",
+  "authors": [
+    "darshana"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/rehanfernando/different",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

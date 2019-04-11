@@ -1,0 +1,131 @@
+.link-button {
+    cursor: pointer;
+    &__icon {
+        display: inline-block;
+        $size: 16px;
+        width: $size;
+        height: $size;
+        background-image: url('../../../assets/images/chev-round-blue.svg');
+        $margin: 7px;
+        margin-left: $margin;
+        top: 4px;
+        position: relative;
+        cursor: pointer;
+        &--prev {
+            transform: rotate(180deg);
+            margin-right: $margin;
+        }
+    }
+}
+
+.transaction-inputs {
+    &__wrapper {
+        display: flex;
+        width: 500px;
+        margin: 0 auto;
+        align-items: center;
+        padding: 20px 0;
+    }
+    margin-left: 10px;
+}
+
+$padding-left: 15px;
+$padding-left-1st: 33px;
+.PDTable.ReactTable .rt-tbody .rt-td {
+    padding: 19px $padding-left;
+    text-align: left;
+    &:first-child {
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        line-height: 2em;
+        padding-top: 10px;
+        padding-left: $padding-left-1st;
+    }
+}
+
+.PDTable.ReactTable .rt-thead .rt-th {
+    padding: 19px $padding-left;
+    text-align: left;
+
+
+    &:before {
+        display: none;
+    }
+    &:first-child {
+        padding-left: $padding-left-1st;
+    }
+}
+
+.PDTable.ReactTable .-loading > div {
+    top: 170px;
+}
+
+.PDTable.ReactTable .rt-noData {
+    top: 177px;
+}
+
+.PDDatePicker {
+    .ant-calendar-picker-input {
+        color: #686868;
+        $offset: 25px;
+        width: 160px - $offset;
+        padding-left: 10px + $offset;
+    }
+    .ant-calendar-picker-icon {
+        top: 45%;
+    }
+}
+
+
+.PDStatus {
+    font-weight: 500;
+    &--Dishonoured {
+        color: #e93600;
+      }
+    
+      &--not-found {
+        padding-top: 30px;
+        text-align: center;
+      }
+    
+      &--Cleared {
+        color: #1CC59A;
+      }
+      
+      &--Approved {
+        color: #1CC59A;
+      }
+    
+      &--Pending {
+        color: #ddc700;
+      }
+    
+      &--Submitted {
+        color: #45C7F5;
+      }
+    
+      &--Cancelled {
+        color: #FA6161;
+      }
+    
+      &--Upcoming {
+        color: #B2B2B2;
+      }
+}
+
+.ReactTable.PDTable {
+    @mixin tablePadding() {
+      padding-left: 20px;
+      padding-right: 0;
+      &:first-of-type {
+        padding-left: 30px;
+      }
+    }
+    .rt-tbody .rt-td {
+      @include tablePadding();
+    }
+    .rt-thead .rt-th {
+      @include tablePadding();
+    }
+  }

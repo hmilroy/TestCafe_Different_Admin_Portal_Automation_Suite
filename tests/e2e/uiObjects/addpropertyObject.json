@@ -1,0 +1,67 @@
+{
+    "data": {
+        "pages": {
+            "login": {
+                "url": "https://dev-admin.different.com.au/",
+                "uiobjects": {
+                    "createproperty": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(2) > div"
+                                     
+                    },               
+                    "cantfind": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div:nth-child(1) > div > div > div.col-xs-offset-9.col-xs-3.cant-find > span"
+                    },
+                    "unitorpobox": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(1) > div > div > select"
+                    },
+                    "unitnumber": {
+                        "selector": "input[class='col-xs formInput formInput--last']"
+                    },
+                    "number": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(2) > div > div > input:nth-child(1)"
+                    },
+                    "street": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(3) > div > div > input"
+                    },
+                    "suburb": {
+                        "selector": "input[name='suburb']"
+                    },
+                    "postcode": {
+                        "selector": "input[name='postCode']"
+                    },
+                    "region": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(6) > div > div > div.col-xs-6.countrySelect__wrapper > select"
+                    },
+                    "email": {
+                        "selector": ".email-validation input[name=\"Search-Input\"]"
+                    },
+                    "addnewemail": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.false > div > div > div.search-input__notfound > div > div:nth-child(2) > p"
+                    },
+                    "ownername": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.false > div > div.form-group.row.element.single-input > input"
+                    },
+                    "dropdown": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.custom-address-comp > div:nth-child(1) > div > div > select"
+                    },
+                    "savebutton": {
+                        "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div.bottom-buttons.force-left.row.col-xs-offset-3 > button.button.button_main"
+                    },
+                    "signout": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.col-xs > div > a.row > div.col.user-name"
+                    },
+                    "logout": {
+                        "selector": "body > div:nth-child(6) > div > div > div > div > span > div > div > div"
+
+                    },
+                    "home":{
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(2) > div"
+                    },           
+                   "editbutton":{
+                       "selector": "button[value='edit']"
+                    }
+               }
+            }
+        }
+    }
+}

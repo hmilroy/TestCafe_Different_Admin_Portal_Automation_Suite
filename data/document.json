@@ -1,0 +1,28 @@
+[
+  {
+    "category": {
+      "categoryId": 1,
+      "name": "Verification - owner"
+    },
+    "documentId": 1,
+    "documentType":{
+      "documentTypeId": 2,
+      "name": "Passport"
+    },
+    "file": "https://s3.amazonaws.com/different-app/TenantAPI/dev/other/test-document.pdf",
+    "date":"11/03/2017"
+  },
+  {
+    "category": {
+      "categoryId": 2,
+      "name": "Verification - tenant"
+    },
+    "documentId": 2,
+    "documentType":{
+      "documentTypeId": 2,
+      "name": "Passport"
+    },
+    "file": "https://s3.amazonaws.com/different-app/TenantAPI/dev/other/test-document.pdf",
+    "date":"05/02/2017"
+  }
+]

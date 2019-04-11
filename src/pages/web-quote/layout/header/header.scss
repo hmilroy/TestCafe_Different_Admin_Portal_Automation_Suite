@@ -1,0 +1,80 @@
+@import "../../../../assets/styles/themeStyles";
+.different-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  z-index: 6;
+  border-bottom: 1px solid #e8e9e9;
+  @media screen and (max-width: $break-big-screen) {
+    height: 80px;
+  }
+
+  .row {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $break-big-screen) {
+    .small-company ,.small-date {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: $break-big-screen) {
+    .small-logo {
+      img {
+        width:160px;
+        height: auto;
+      }
+
+    }
+    .padding-top {
+      padding-top: 15px;
+    }
+    .small-company {
+      color: #333b3f;
+      line-height: 27px;
+      font-size: 24px;
+    }
+
+    .small-date {
+      line-height: 24px;
+      font-size: 21px;
+      color: #0071cd;
+    }
+  }
+  .maintenance-date{
+    color: #0071cd;
+    font-size: 14px;
+    @media screen and (max-width: $break-big-screen) {
+      display: none;
+    }
+  }
+
+  .company {
+    color: #333b3f;
+    line-height: 16px;
+    font-size: 14px;
+    @media screen and (max-width: $break-big-screen) {
+      display: none;
+    }
+  }
+
+  .different-logo {
+    padding: 20px 0;
+  }
+
+  .right-align-header {
+    text-align: right;
+  }
+
+  .different-user {
+    font-family: $different-primary-font;
+    position: relative;
+    right: 0;
+    padding: 27px 0 27px 20px;
+  }
+}

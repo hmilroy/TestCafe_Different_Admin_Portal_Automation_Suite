@@ -1,0 +1,38 @@
+[
+  {
+    "address":"138, one street, city1.",
+    "propertyId": 1,
+    "owner":"owner 1",
+    "ownerId":"1",
+    "tenant":"tenant 1",
+    "tenantId": 1,
+    "date":"02/30/2017"
+  },
+  {
+    "address":"167, two street, city2.",
+    "propertyId": 2,
+    "owner":"owner 2",
+    "ownerId": 2,
+    "tenant":"tenant 2",
+    "tenantId": 2,
+    "date":"02/03/2017"
+  },
+  {
+    "address":"145, three street, city3.",
+    "propertyId": 3,
+    "owner":"owner 3",
+    "ownerId": 3,
+    "tenant":"tenant 3",
+    "tenantId": 3,
+    "date":"02/28/2017"
+  },
+  {
+    "address":"168, four street, city4.",
+    "propertyId": 4,
+    "owner":"owner 4",
+    "ownerId": 4,
+    "tenant":"tenant 4",
+    "tenantId": 4,
+    "date":"02/17/2017"
+  }
+]

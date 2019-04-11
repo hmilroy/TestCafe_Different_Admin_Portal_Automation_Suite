@@ -1,0 +1,116 @@
+@import "../../../../assets/styles/themeStyles";
+$checkbox: url("../../../../assets/images/checkbox-new.png");
+$checkbox: url("../../../../assets/images/checkbox.svg");
+$error: url("../../../../assets/images/error.png");
+$min-width: 200px;
+$height: 55px;
+
+.hdValidation {
+  &:before {
+    background-image: $error;
+  }
+}
+.VAValidation-error, .validation-error {
+  $size: 10px;
+  color: #ff5960;
+  font-size: 11px;
+  font-weight: 500;
+  padding-left: $size + 5px;
+  position: relative;
+  &:before {
+    position: absolute;
+    left: 0;
+    top: 1px;
+    content: '';
+    background-image: $error;
+    display: inline-block;
+    width: $size;
+    height: $size;
+    background-size: contain;
+    background-position: center;
+  }
+}
+.DA-CheckboxItem {
+  display: table-row;
+  height: $height;
+  &> * {
+    display: table-cell;
+  }
+
+  &__error {
+    color: red;
+  }
+  &__label {
+    /* Style for "Water" */
+    //width: 44px;
+    //height: 19px;
+    //opacity: 0.5;
+    color: #000000;
+    font-family: $different-primary-font;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__date {
+    padding-left: 20px;
+    opacity: 0.8;
+    color: #000000;
+    font-family: $different-primary-font;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  &__email {
+    /* Style for "strata@str" */
+    //width: 138px;
+    //height: 16px;
+    opacity: 0.8;
+    color: #000000;
+    font-family: $different-primary-font;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__checkboxWrap {
+    min-width: $min-width;
+  }
+
+  &__checkbox {
+    opacity: 0;
+  }
+  &__checkbox ~ span:before {
+    content: '';
+    display: inline-block;
+    $size: 22px;
+    width: $size;
+    height: $size;
+    //border: 1px solid red;
+    background-image: $checkbox;
+    background-size: 44px 22px;
+    top: 5px;
+    position: relative;
+    left: -21px;
+    background-repeat: no-repeat;
+
+  }
+  &__checkbox:checked ~ span:before {
+    background-position: -22px;
+
+  }
+
+  &__input {
+    width: 280px;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    padding-left: 14px;
+  }
+}
+
+.bill-button {
+  margin-right: 15px;
+}
+
+.add-person-form .bills-section input:disabled {
+  width: auto;
+}

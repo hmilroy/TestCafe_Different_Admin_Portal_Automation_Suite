@@ -1,0 +1,27 @@
+@import "../../../assets/styles/themeStyles";
+
+.section-header {
+  background-color: #dfeaf5;
+  h1 {
+    line-height: 22px;
+    color: #000000;
+    font-family: $different-primary-font;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    margin: 0 !important;
+    span {
+      margin: 0 5px;
+      padding: 2px 5px;
+      border-radius: 8px;
+      background-color: #96a6bb;
+    }
+  }
+}
+
+.maintenance-dashboard {
+  .rt-td {
+    color: #000000;
+  }
+}

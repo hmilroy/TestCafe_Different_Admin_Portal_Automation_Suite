@@ -1,0 +1,154 @@
+@import "../../../assets/styles/themeStyles";
+.inputContainer {
+  padding: 19px 75px;
+  font-family: $different-primary-font !important;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  width: 100%;
+}
+
+.react-autosuggest__input {
+  border: none;
+  font-family: $different-primary-font !important;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 12px;
+  width: 640px;
+}
+
+.react-autosuggest__input--focused {
+  outline: none;
+}
+
+.react-autosuggest__input--open {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.global-search{
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 60px;
+    background-color: #fff;
+    font-family: $different-primary-font;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 2;
+    width: 85%;
+    box-shadow: #ddd 0px 3px 4px 1px;
+
+    &:before {
+
+      content: '';
+      display: inline-block;
+      width: 100%;
+      height: 8px;
+      position: relative;
+      top: -7px;
+      background: linear-gradient(#eeeeeec9,white);
+    }
+    @media (min-width: $break-big-screen) {
+      left: 73px;
+    }
+
+    @media (max-width: $break-big-screen) {
+      top: 51px;
+      width: 140px;
+    }
+  }
+
+  .react-autosuggest__suggestions-list {
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0 0;
+    list-style-type: none;
+  }
+
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 14px;
+    font-family: $different-primary-font;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+  }
+
+  .react-autosuggest__section-container {
+    $color: rgba( #979797, .3);
+    border-top: 1px solid $color;
+    padding: 32px 0;
+    margin: 0 32px;
+
+    &:last-of-type {
+      padding-bottom: 24px;
+    }
+  }
+
+  .react-autosuggest__section-container--first {
+    border-top: 0;
+    padding-top: 13px;
+  }
+
+  .react-autosuggest__section-title {
+    padding: 0 0 10px 0;
+    font-size: 12px;
+    color: #000;
+    opacity: 0.4;
+    font-family: $different-primary-font;
+    font-weight: 600;
+  }
+}
+
+.inputContainer {
+  .icofont {
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+
+.react-autosuggest__section-container {
+  border-top: none;
+}
+
+.test {
+  border: 1px dashed red;
+}
+
+.global-search {
+  .react-autosuggest__input {
+      min-width: 466px;
+      width: 466px;
+      @media screen and(min-width: 1600px) {
+        width: 50vw;
+      }
+  }
+  position: relative;
+}
+
+.GlobalSearchClearButton {
+  //border: 1px solid red;
+  position: absolute;
+  right: 32px;
+  top: 17px;
+  cursor: pointer;
+  $size: 25px;
+  height: $size;
+  width: $size;
+  background-image: url('../../../assets/images/clears.png');
+  background-position: 0px 0;
+  background-size: 200% 100%;
+  background-repeat: no-repeat;
+  &:hover {
+    background-position: 100% 0;
+  }
+}

@@ -1,0 +1,83 @@
+@import '../../../assets/styles/themeStyles';
+$amber: #ffa052;
+$red: #ff5a61;
+$green: #2de8ae;
+@mixin listItem() {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #989898;
+  cursor: pointer;
+  font-family: $different-primary-font;
+}
+@mixin buttons() {
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dce0e0;
+}
+
+.Takeover_Percentage {
+  width: 35px;
+  height: 19px;
+  color: $amber;
+  font-family: $different-primary-font;
+  font-size: 16px;
+  font-weight: 500;
+  &--red {
+    color: $red;
+  }
+  &--green {
+  color: $green;
+  }
+}
+.DA-Pagination {
+
+  margin-top: 39px;
+  padding-left: 0;
+
+  text-align: center;
+  &__dots {
+    display: inline-block;
+  }
+  &__item {
+    @include listItem();
+
+
+    &--disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+    &--active {
+      .DA-Pagination__pageLink {
+        border-radius: 4px;
+        background-color: #629fed;
+        color: #fff;
+      }
+    }
+  }
+
+  &__pageLink {
+    padding: 10px 15px;
+  }
+  &__prev--link {
+    @include buttons();
+    margin-right: 12px;
+  }
+  &__next--link {
+    @include buttons();
+    margin-left: 12px;
+  }
+}
+
+.DA-PropertyUnderManagementContainer {
+  background-color: #f5f7fa;
+}
+
+.dashboardPropertyTable {
+  &> .-pagination {
+    display: none !important;
+  }
+}
+.ReactTable .rt-table {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}

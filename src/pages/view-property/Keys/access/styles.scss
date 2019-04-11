@@ -1,0 +1,68 @@
+@import "../../../../assets/styles/themeStyles";
+
+.access_row {
+  display: block;
+  margin: 0 10;
+}
+.label_text {
+  opacity: 0.5;
+  color: rgb(0, 0, 0);
+  font-family: $different-primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 10 0;
+  display: inline-block;
+}
+
+.content_text {
+  opacity: 0.8;
+  color: rgb(0, 0, 0);
+  font-family: $different-primary-font;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  display: inline-block;
+  padding-top: 5px;
+}
+
+.access_button {
+  margin-top: 20px;
+}
+
+.access_note {
+  margin-top: 30px;
+  border-radius: 3px;
+  border: 1px solid rgba(191, 191, 191, 0.5);
+  width: 400px;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  resize: none;
+  font-family: $different-primary-font, 'sans-serif';
+  line-height: 18px;
+  font-size: 14px;
+  &__text {
+    font-family: $different-primary-font, 'sans-serif';
+    line-height: 18px;
+    white-space: pre-line;
+  }
+}
+
+.add-person-form label.access_checkbox {
+  display: block;
+  height: 25px;
+  opacity: 0.8;
+}
+
+.add-person-form label.notes_label {
+  padding-top: 25px;
+}
+
+.keys_span {
+  display: block;
+}
+
+.notes_p {
+  padding-top: 25px;
+}
+

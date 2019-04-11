@@ -1,0 +1,97 @@
+@import "themeStyles";
+@import "fonts";
+Body {
+  font-family: $different-primary-font, 'sans-serif' !important;
+  color: $different-font-color;
+  font-size: 14px;
+  margin-top: 0;
+  min-height: 100%;
+  background-color: $different-bg-color;
+}
+
+h1 {
+  color: $different-h1-font-color;
+}
+
+p {
+  color: $different-font-color;
+}
+
+label{
+  color: $different-font-color;
+  font-size: 12px;
+}
+
+.content-dock {
+  position: relative;
+  display: table;
+  top: 70px;
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100%;
+
+  @media (max-width: $break-big-screen) {
+    top: 50px;
+    padding-bottom: 0;
+    overflow: auto;
+  }
+}
+
+#toast-container > .toast {
+  background-image: none !important;
+  @media (max-width: $break-big-screen) {
+    width: 90%;
+  }
+  width: 631px;
+  height: 82px;
+  box-shadow: 0 24px 24px rgba(0, 0, 0, 0.3), 0 0 24px rgba(0, 0, 0, 0.22);
+  border-radius: 4px;
+  border: 1px solid #979797;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+#toast-container.toast-top-center > .toast {
+  height: 110px;
+}
+
+#toast-container.toast-top-center > .toast:before {
+  font-size: 24px;
+  font-family: 'IcoFont' !important;
+  line-height: 18px;
+  color: $different-font-color;
+  padding-right: 0.5em;
+  margin: auto 0.5em auto -1.5em;
+}
+#toast-container > .toast:before {
+  font-size: 24px;
+  font-family: 'IcoFont' !important;
+  line-height: 18px;
+  float: left;
+  color: $different-font-color;
+  padding-right: 0.5em;
+  margin: auto 0.5em auto -1.5em;
+}
+#toast-container > .toast-warning:before {
+  content: url('../../assets/images/neutral.png');
+}
+#toast-container > .toast-error:before {
+  content: url('../../assets/images/angry.png');
+}
+#toast-container > .toast-info:before {
+  content: url('../../assets/images/checked.png');
+}
+#toast-container > .toast-success:before {
+  content: url('../../assets/images/smile.png');
+}
+
+.toast-message{
+  color: $different-font-color;
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+#toast-container > div{
+  opacity:1;
+}

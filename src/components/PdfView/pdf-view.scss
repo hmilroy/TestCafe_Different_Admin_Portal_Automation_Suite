@@ -1,0 +1,19 @@
+.PdfView__loader {
+  padding-top: 10px;
+  min-width: 500px;
+  &__content {
+    text-align: center;
+  }
+  &__image {
+    animation: 600ms loaderSpin linear infinite;
+  }
+}
+
+@keyframes loaderSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

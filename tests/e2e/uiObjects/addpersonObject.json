@@ -1,0 +1,57 @@
+{
+    "data": {
+        "pages": {
+            "login": {
+                "url": "https://dev-admin.different.com.au/",
+                "uiobjects": {
+                    "buttonSignInWithGoogle": {
+                        "selector": ".abcRioButtonContentWrapper"
+                    },
+                    "inputEmail": {
+                        "selector": "#identifierId"
+                    },
+                    "inputPassword": {
+                        "selector": "#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input"
+                    },
+                    "spanNameHolder": {
+                        "selector": "div.user-name span"
+                    },
+                    "addpersonbutton":{
+                        "selector":"#differentApp > div > div.row.bordered-header > div.col-xs > div > a:nth-child(3) > div"
+                    },
+                    "roleemail":{
+                        "selector":".add-person-form--new-person--role input[id*=Search-Input-undefined-undefined-]"
+                    },
+                    "addnewpersonemail":{
+                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(2) > div > div.search-input__notfound > div > div:nth-child(2) > p"
+                    },
+                    "newpereonname":{
+                       "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(1) > input"
+                    },
+
+                    "mobileno":{
+                       "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.phone-number-section > div > div > div.col-xs-10 > ul > li:nth-child(2) > input"
+                    },
+                    "newcompany":{
+                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(4) > input"
+
+                    },
+
+                    "website":{
+                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.web-input > div > input"
+                    },
+
+                    "newcatagory":{
+                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.main-selection.category > div > div > input"
+
+                    },
+                    "savebutton":{
+                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div.col-xs-8.col-xs-offset-4.action-buttons > button.button.button_main"
+                    }
+                   
+                    
+                }
+            }
+        }
+    }
+}

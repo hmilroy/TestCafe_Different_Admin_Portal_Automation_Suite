@@ -1,0 +1,67 @@
+{
+  "id": 1,
+  "address": "1234 Proudfoot Drive",
+  "email": "james.potter@gmail.com",
+  "price": 520000.00,
+  "weekly_rent": 500.00,
+  "bedroom": 2,
+  "bathroom": 2,
+  "parking": 1,
+  "property_type": {
+    "id": 1,
+    "name": "Townhouse"
+  },
+  "pool": false,
+  "strata": true,
+  "previous_property_manager": true,
+  "w_e_d_installed": false,
+  "water_separately_metered": true,
+  "built_before_80s": false,
+  "lease_start_date": "2017-04-21",
+  "lease_end_date": "2018-06-15",
+  "management_agreement_start_date": "2017-05-01",
+  "owner": {
+    "name": "James Potter",
+    "role": "owner",
+    "email": "james.potter@gmail.com",
+    "mobile": {
+      "country": "au",
+      "code": "+61",
+      "number": "043 2133 444"
+    },
+    "mailAddress": "2346 Sunrise Boulevard, Sydney, NSW, 2010"
+  },
+  "tenant": {
+    "name": "Kary Kirsten",
+    "role": "tenant",
+    "email": "kary.kirsten@gmail.com",
+    "mobile": {
+      "country": "au",
+      "code": "+61",
+      "number": "043 2133 444"
+    }
+  },
+  "strata_manager": {
+    "name": "Ricky Ponting",
+    "role": "strata manager",
+    "email": "ricky.ponting@gmail.com",
+    "mobile": {
+      "country": "au",
+      "code": "+61",
+      "number": "043 2133 444"
+    },
+    "mailAddress": "2346 Sunrise Boulevard, Sydney, NSW, 2010"
+  },
+  "property_manager": {
+    "name": "Shaun Pollock",
+    "role": "property manager",
+    "email": "pollock.sa@gmail.com",
+    "mobile": {
+      "country": "au",
+      "code": "+61",
+      "number": "043 2133 444"
+    },
+    "mailAddress": "2346 Sunrise Boulevard, Sydney, NSW, 2010",
+    "company": "Mannar and co. (pvt) ltd."
+  }
+}

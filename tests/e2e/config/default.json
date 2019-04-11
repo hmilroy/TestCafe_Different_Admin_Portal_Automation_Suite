@@ -1,0 +1,24 @@
+{
+    "appname": "Different Admin Frontend - DEV",
+    "appdata": {
+        "baseUrl": "https://qa-admin.different.com.au/"
+    },
+    "data": {
+        "sheetId": "15j8pGuhWwlchDDp1Lo2E0rlEfu6viplPdj5VQ4-F2ks"
+    },
+    "credentials": {
+        "google": {
+            "type": "service_account",
+            "project_id": "qa-test-208410",
+            "private_key_id": "b8d9d3d2fb0de721388751932aa90be8f26b90dd",
+            "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCbfl+Ta6XCkXW7\np9HtAK90Tk7pMXgoCozTMlT0q6YQirnGYsMm1H4dELR7j8lFisDvUQ447YIempzt\nQIe6LEn0e6SvGraDHNvIwPI3TuaPqz37/oNQV56eBOsJhrCwJZN4uK1ohaHRkZ92\ntsOKjJX2YlNToK8RtQWJTLooqq70tAi0tgQ5Z+Z1FwOO2wKrarG2xfUqjMztsAP2\nmxyAR4g3x5EiFVOFHnLx8B7WCV/PmgY5R1nmRlWMdOFzJo5/D4uEDIMXhhxKoIHU\nc25iZuZl7Pfr7jJ9Bp+qVftynaFIRaByQVI/Jm0bw6gz4Bgcj7CFJ8fnZ5sleRYk\nV6u4XE5ZAgMBAAECggEAAZgqIrjX2kbjjikKXgPDyM2EwZ9gPAjfqMq7VEbuTP0f\nKomYtq03HdUuBJZU2gGyOMH8A1lsHCQ5t7URrzcFCxy5c5IyjOWe21AfK7IDazW2\nTP8vGYPMfJJQVqiq5yN7f6FlJc04+40itXTqTGFkqEIZ2KGtKeFRTTccMY6OfLPX\nyyFJKe0nCub5oTqlxWCzjHs4e58Y7w+wsYHh3aBg7381BTufbv02LC83J53kX/xC\n9GWSW1vqr+PW2sJBlaxr3fUhKDidAdeK7ZKwAHgDHoQQiKFHDIkw+Yw+mqZde4jj\ntRbybzW33hxO6bBl1ugBbNDR1DER9tCmUSNCLv4YgQKBgQDNRtUwTXtd4G0AAoEa\namjQHGrI9/cIurCai8WSS2mbhRU6UOCnt1b1yTS2UcWsMRIj9vpqZ6pNZ3/CiXZu\nIrh0CnRLWtlvHAwhDh5XtS0R7yK9nm618IZ8+qlHdMnNaoaiP2L02UsUvOGXpEvk\nZQSJhq3jyqcoDcnasSGCNjygPwKBgQDB6mth75ztIZwYzcT0b024AnGpl1D7wf+B\nV5E1D3DCFCqF4z8VeblVAhuo9ibAnknPuPUHhVzGsbWZWgbaStBo2r0gXYYdAi39\nTVYDMESnT3taCcKoDGiz7a+xXXVNDBSdcdt/n7QT3UrRUuOephQrQKsrWJmIeDZr\nh/HZaaLrZwKBgAtpI5Kiy/fE8OouOXT5c0gWPE1dk0rV7dk5acsfDAjMFgj+0+4e\nv+O7woVb+EwBEkwTf4oIpyvUVALBV2b54Rz6M8q4ixulCHuR6Ffhx1aW32yA8RCG\nBUPPPzeso0ca488DDQIlTgoiEbw3MszIXL80UFg4PKB6W70fWYh+cVJLAoGBAKv8\nCiNBTg/uyDAjh/Q3J1n1KPP91YCETeVcUdgaiqpHEnPO2atlWx9vEDMppbMecF6A\nLynteRxsjqCk/QDsa60jm6ux5vmhbkKDLa8ER0+QqdlwYKmE3/P88d9AAYJFHZ+K\nVN/7N86KbQn8Fw8lQywdXfLC0OD9pV53ouNt0mYvAoGBAMBqv5m4Yk9WkpL4ThWB\nG/Ic6mQ2EMm+3DaAybyBIrB3n8G8awdnju4q9Wf0CT7R5gcNYnBZ+b4XP+qh9Zt8\n/Ur5uQxT9F8frYU3GZ3weM10v44U6i0kYQVmMhS40eWQoDD5nQjkB+iEedQEoiUI\nQWHvLDnEV1dbl1SPZZ8Lqhkf\n-----END PRIVATE KEY-----\n",
+            "client_email": "qa-326@qa-test-208410.iam.gserviceaccount.com",
+            "client_id": "108740077099745335266",
+            "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+            "token_uri": "https://accounts.google.com/o/oauth2/token",
+            "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+            "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/qa-326%40qa-test-208410.iam.gserviceaccount.com"
+        }          
+
+    }
+}

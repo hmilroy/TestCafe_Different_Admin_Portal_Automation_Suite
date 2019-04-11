@@ -1,0 +1,22 @@
+.PDFModal {
+    &__view {
+        min-width: 500px;
+        text-align: center;
+    }
+    &__pagination {
+        text-align: center;
+    }
+    &__button {
+        width: 105px;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #1cc59a;
+        border: none;
+        color: #fff;
+        text-transform: uppercase;
+        margin: 0 5px;
+        &--disabled {
+            background-color: #98b1c9;
+        }
+    }
+}

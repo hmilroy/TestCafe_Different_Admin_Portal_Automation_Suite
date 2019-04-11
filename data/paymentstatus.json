@@ -1,0 +1,25 @@
+{
+  "0": {
+    "name": "Dishonoured",
+    "message": "This tenant is in arrears since "
+  },
+  "1": {
+    "name": "Cleared",
+    "message": "This tenant is paid to "
+  },
+  "2": {
+    "name": "Pending",
+    "message": "Current payment is in progress since "
+  },
+  "3": {
+    "name": "Submitted",
+    "message": "Current payment is in progress since "
+  },
+  "4": {
+    "name": "Cancelled",
+    "message": "This tenant is paid to "
+  },
+  "5": {
+    "name": "Upcoming"
+  }
+}
