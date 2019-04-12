@@ -3,7 +3,7 @@
  */
 'use strict';
 
-import UIObjects from '../../uiObjects';
+import UIObjects from '../uiObjects';
 
 class BaseComponent {
     constructor() {

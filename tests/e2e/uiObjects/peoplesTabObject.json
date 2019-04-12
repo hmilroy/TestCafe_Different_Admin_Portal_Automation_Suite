@@ -1,0 +1,56 @@
+{
+    "data": {
+        "pages": {
+            "login": {
+                "url": "https://dev-admin.different.com.au/",
+                "uiobjects": {
+                    "buttonSignInWithGoogle": {
+                        "selector": ".abcRioButtonContentWrapper"
+                    },
+                    "inputEmail": {
+                        "selector": "#identifierId"
+                    },
+                    "inputPassword": {
+                        "selector": "#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input"
+                    },
+                    "spanNameHolder": {
+                        "selector": "div.user-name span"
+                    },
+                    "propertyresultsTenant": {
+                        "selector": "#react-autowhatever-1-section-0-item-0 > div > span"
+                    },
+                    "peoplesTab": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(3) > div"
+                    },
+                    "tenantTab": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.row.col-xs-12.person-role-tabs > div:nth-child(2)"
+                    },
+                    "addTenant": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.row.end-xs > div > div > ul > li:nth-child(2)"
+                    },
+                    "email": {
+                        "selector": "input[id*=Search-Input-]"
+                    },
+                    "addnewemail": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div > div > div.search-input__notfound > div > div:nth-child(2) > p"
+                    },
+                    "tenantName": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div:nth-child(1) > div.form-group.row.element.single-input > input"
+                    },
+                    "mobileNo": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div:nth-child(1) > div.form-group.row.element.phone-number-section > div > div > div.col-xs-10 > ul > li:nth-child(2) > input"
+                    },
+                    "saveButton": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div.col-xs-8.col-xs-offset-4.action-buttons > button.button.button_main"
+                    },
+                    "leaseoptions": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div:nth-child(1) > div:nth-child(2) > select > option:nth-child(2)"
+                    },
+                    "leaseSelector":{
+                        "selector":"#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div:nth-child(1) > div:nth-child(2) > select"
+                    }
+                }
+            }
+        }
+    }
+}
