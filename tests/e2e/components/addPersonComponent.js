@@ -9,7 +9,7 @@ import BaseComponent from './BaseComponent';
 
 class addPersonComponent extends BaseComponent {
     constructor() {
-        // noinspection JSAnnotator test
+        // noinspection JSAnnotator testttt
         super();
 
         let addpersonObject = this.UIObjects.addpersonObject;
