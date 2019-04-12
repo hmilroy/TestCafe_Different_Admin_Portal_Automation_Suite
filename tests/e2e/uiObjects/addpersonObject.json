@@ -16,40 +16,45 @@
                     "spanNameHolder": {
                         "selector": "div.user-name span"
                     },
-                    "addpersonbutton":{
-                        "selector":"#differentApp > div > div.row.bordered-header > div.col-xs > div > a:nth-child(3) > div"
+                    "addpersonbutton": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(3) > div"
                     },
-                    "roleemail":{
-                        "selector":".add-person-form--new-person--role input[id*=Search-Input-undefined-undefined-]"
+                    "roleemail": {
+                        "selector": ".add-person-form--new-person--role input[id*=Search-Input-undefined-undefined-]"
                     },
-                    "addnewpersonemail":{
-                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(2) > div > div.search-input__notfound > div > div:nth-child(2) > p"
+                    "addnewpersonemail": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(2) > div > div.search-input__notfound > div > div:nth-child(2) > p"
                     },
-                    "newpereonname":{
-                       "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(1) > input"
+                    "newpereonname": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(1) > input"
                     },
-
-                    "mobileno":{
-                       "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.phone-number-section > div > div > div.col-xs-10 > ul > li:nth-child(2) > input"
+                    "mobileno": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.phone-number-section > div > div > div.col-xs-10 > ul > li:nth-child(2) > input"
                     },
-                    "newcompany":{
-                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(4) > input"
-
+                    "mailingAddress": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.single-input.address-input.mappify-address > div > div.react-autosuggest__container > input"
                     },
-
-                    "website":{
-                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.web-input > div > input"
+                    "addressoption": {
+                        "selector": "#react-autowhatever-1--item-0 > span"
                     },
-
-                    "newcatagory":{
-                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.main-selection.category > div > div > input"
-
+                    "newcompany": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div:nth-child(4) > input"
                     },
-                    "savebutton":{
-                        "selector":"#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div.col-xs-8.col-xs-offset-4.action-buttons > button.button.button_main"
+                    "website": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.web-input > div > input"
+                    },
+                    "catagoryoption": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.main-selection.category > div > div > select"
+                    },
+                    "newcatagory": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.main-selection.category > div > div > input"
+                    },
+                    "savebutton": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div.col-xs-8.col-xs-offset-4.action-buttons > button.button.button_main"
+                    },
+                    "mainlogo": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.different-logo.col-xs-1 > a > img"
                     }
-                   
-                    
                 }
             }
         }

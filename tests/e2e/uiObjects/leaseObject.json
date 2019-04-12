@@ -27,7 +27,7 @@
                     },
                     "propertyresults": {
                         "selector": "#react-autowhatever-1-section-0-item-0 > div > span"
-                     },
+                    },
                     "propertynameindashboard": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.section-header > h1"
                     },
@@ -38,14 +38,16 @@
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div > div.add-lease-button"
                     },
                     "fixedlease": {
-                        "selector": "input[value='fixed']"
-                        
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > label:nth-child(2)"
                     },
                     "periodiclease": {
-                        "selector": "input[value='periodic']"
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > label:nth-child(4)"
                     },
                     "rentamount": {
                         "selector": "input[class='lease-weekly-rent']"
+                    },
+                    "autoConvertPeriodic": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > div > div > label > span"
                     },
                     "leasestart": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div > div:nth-child(5) > div:nth-child(2) > div > div > span > div > input"
@@ -85,6 +87,22 @@
                     },
                     "save": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > form > div.inner-form.view-person > div.bottom-buttons > button"
+                    },
+                    "calenderpicker": {
+                        "selector": "input[class='ant-calendar-picker-input ant-input']"
+                    },
+                    "year": {
+                        "selector": "a[class='ant-calendar-year-panel-year']"
+                    },
+                    "month": {
+                        "selector": "td[class='ant-calendar-month-panel-cell']"
+                    },
+                    "day": {
+                        "selector": "div[class='ant-calendar-date']"
+                    },
+
+                    "searchClose": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.global-search.col-xs-6 > div.GlobalSearchClearButton"
                     }
                 }
             }

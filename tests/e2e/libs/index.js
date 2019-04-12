@@ -5,5 +5,5 @@
 
 module.exports = {
     helpers: require('./helpers'),
-    components: require('./components')
+    components: require('../components')
 };
