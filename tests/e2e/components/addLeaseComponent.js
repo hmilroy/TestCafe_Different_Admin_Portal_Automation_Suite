@@ -41,7 +41,7 @@ class addLeaseComponent extends BaseComponent {
         this.bondreference = Selector(leaseObject.data.data.pages.login.uiobjects.bondreference.selector);
         this.savebutton = Selector(leaseObject.data.data.pages.login.uiobjects.savebutton.selector);
         this.searchClose = Selector(leaseObject.data.data.pages.login.uiobjects.searchClose.selector);
-
+//reree
         this.execute = this.execute.bind(this);
 
     }
