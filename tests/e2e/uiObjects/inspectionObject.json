@@ -1,0 +1,71 @@
+{
+    "data": {
+        "pages": {
+            "login": {
+                "url": "https://dev-admin.different.com.au/",
+                "uiobjects": {
+                    "buttonSignInWithGoogle": {
+                        "selector": ".abcRioButtonContentWrapper"
+                    },
+                    "inputEmail": {
+                        "selector": "#identifierId"
+                    },
+                    "inputPassword": {
+                        "selector": "#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input"
+                    },
+                    "spanNameHolder": {
+                        "selector": "div.user-name span"
+                    },
+                    "search": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.global-search > div > div.inputContainer > input"
+                    },
+                    "searchresults": {
+                        "selector": "#react-autowhatever-1-section-1-item-0"
+                    },
+                    "correctuser": {
+                        "selector": "#differentApp > div > div.content-dock > div > div > div.form-header.align-left > h1"
+                    },
+                    "propertyresults": {
+                        "selector": "#react-autowhatever-1-section-0-item-0 > div > span"
+                    },
+                    "propertynameindashboard": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.section-header > h1"
+                    },
+                    "inspectiontab": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(6) > div"
+                    },
+                    "addinspectionbutton": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > form > button"
+                    },
+                    "inspectiondialogbox": {
+                        "selector": "div[class='inspection-dialog']"
+                    },
+                    "supplierResults": {
+                        "selector": "input[id*='Search-Input-undefined-undefined-']"
+                    },
+                    "typeSelectors": {
+                        "selector": "select[name='type']"
+                    },
+                    "dragfile": {
+                        "selector": "body > div:nth-child(5) > div > div:nth-child(1) > div > div > div:nth-child(1) > div.col-xs-12.drop-zone-content"
+                    },
+                    "calenderpicker": {
+                        "selector": "input[class='ant-calendar-picker-input ant-input']"
+                    },
+                    "year": {
+                        "selector": "a[class='ant-calendar-year-panel-year']"
+                    },
+                    "month": {
+                        "selector": "td[class='ant-calendar-month-panel-cell']"
+                    },
+                    "day": {
+                        "selector": "div[class='ant-calendar-date']"
+                    },
+                    "searchClose": {
+                        "selector": "#differentApp > div > div.row.bordered-header > div.global-search.col-xs-6 > div.GlobalSearchClearButton"
+                    }
+                }
+            }
+        }
+    }
+}

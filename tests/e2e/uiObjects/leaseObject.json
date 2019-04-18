@@ -93,6 +93,7 @@
                     },
                     "year": {
                         "selector": "a[class='ant-calendar-year-panel-year']"
+                        
                     },
                     "month": {
                         "selector": "td[class='ant-calendar-month-panel-cell']"

@@ -1,6 +1,6 @@
 /**
  * @file Login Component.
- * @author Hasitha Gamage
+ * @author Milroy Perera
  */
 'use strict';
 
@@ -8,8 +8,6 @@ import { Selector, t } from 'testcafe';
 import getValue from 'get-value';
 import BaseComponent from './BaseComponent';
 import config from '../libs/helpers/configHelper';
-// import { Input } from 'antd';
-//  import { Divider } from 'material-ui';
 
 class addLeaseComponent extends BaseComponent {
     constructor() {
@@ -88,8 +86,8 @@ class addLeaseComponent extends BaseComponent {
 
                 .click(secondCalender)
                 .wait(1000)
-                .click(this.year.withText(data.leaseendyear))
-                .click(this.month.withText(data.leaseendmonth))
+                .click(this.year.withText(data.leasestartyear))
+                .click(this.month.withText(data.leasestartmonth))
                 .click(this.day.withText(data.leasestartday))
         }
         else {
