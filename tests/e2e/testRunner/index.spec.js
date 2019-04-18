@@ -81,24 +81,24 @@ const addTenantComponent = new components.addTenantComponent();
 
 
 
-// test('End to End test', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for(var i=0; i<10;i++){
-//     await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[i]);
-//     await addLeaseComponent.execute(t.fixtureCtx.data.addLease[i]);
-//     await addTenantComponent.execute(t.fixtureCtx.data.addTenant[i]);
-//     }}
-// );
-
-
-
-
-test('Add Multiple properties funtionality', async () => {
+test('End to End test', async () => {
     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for (let data of t.fixtureCtx.data.addMultilpeProperties) {
-        await addPropertyComponent.execute(data);
-    }
-});
+    for(var i=0; i<10;i++){
+    await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[i]);
+    await addLeaseComponent.execute(t.fixtureCtx.data.addLease[i]);
+    await addTenantComponent.execute(t.fixtureCtx.data.addTenant[i]);
+    }}
+);
+
+//ir
+
+
+// test('Add Multiple properties funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addMultilpeProperties) {
+//         await addPropertyComponent.execute(data);
+//     }
+// });
 
 // test('Add Lease Funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
