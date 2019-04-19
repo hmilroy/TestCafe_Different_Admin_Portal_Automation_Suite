@@ -5,7 +5,7 @@ This is Automation project for TestCafe E2E testing, this seed rich with lots of
 We use [TestCafe](https://github.com/DevExpress/testcafe) as our UI automation framework.
 
 
-#### _Code/Folder Structure_
+#### _Code/Folder Structure_//test
 
 This testcafe project contains following code/folder structure.
 * `components/` - contains all the reusable entities
