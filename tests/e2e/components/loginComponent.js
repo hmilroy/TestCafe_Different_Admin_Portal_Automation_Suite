@@ -27,7 +27,7 @@ class LoginComponent extends BaseComponent {
     async execute(data) {
 
         await t
-        
+
             .maximizeWindow()
             .click(this.buttonSignInWithGoogle)
             .typeText(this.inputEmail, data.email)
@@ -42,5 +42,5 @@ class LoginComponent extends BaseComponent {
 }
 //test@different.com.au
 //nW#&G0Z&!Xc:5
-//.typeText(this.inputEmail, getValue(t.fixtureCtx.data, 'userLogin.0.email'))
+
 module.exports = LoginComponent;

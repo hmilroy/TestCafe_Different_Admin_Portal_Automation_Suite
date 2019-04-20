@@ -2,7 +2,6 @@
     "data": {
         "pages": {
             "login": {
-                "url": "https://dev-admin.different.com.au/",
                 "uiobjects": {
                     "buttonSignInWithGoogle": {
                         "selector": ".abcRioButtonContentWrapper"
