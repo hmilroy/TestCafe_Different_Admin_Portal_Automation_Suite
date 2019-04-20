@@ -14,22 +14,24 @@ class keysComponent extends BaseComponent {
         // noinspection JSAnnotator
         super();
 
+        let loginObject = this.UIObjects.loginObject;
         let keysObject = this.UIObjects.keysObject;
-        let inspectionObject = this.UIObjects.inspectionObject;
+      
 
         // UI objects with initialization
-        this.search = Selector(keysObject.data.data.pages.login.uiobjects.search.selector);
-        this.searchresults = Selector(keysObject.data.data.pages.login.uiobjects.searchresults.selector);
-        this.correctuser = Selector(inspectionObject.data.data.pages.login.uiobjects.correctuser.selector);
-        this.propertyresults = Selector(inspectionObject.data.data.pages.login.uiobjects.propertyresults.selector);
-        this.propertynameindashboard = Selector(inspectionObject.data.data.pages.login.uiobjects.propertynameindashboard.selector);
-        this.keystab = Selector(keysObject.data.data.pages.login.uiobjects.keystab.selector);
-        this.editbutton = Selector(keysObject.data.data.pages.login.uiobjects.editbutton.selector);
-        this.leasingcheckbox = Selector(keysObject.data.data.pages.login.uiobjects.leasingcheckbox.selector);
-        this.managementcheckbox = Selector(keysObject.data.data.pages.login.uiobjects.managementcheckbox.selector);
-        this.tenantcheckbox = Selector(keysObject.data.data.pages.login.uiobjects.tenantcheckbox.selector);
-        this.accessNotes = Selector(keysObject.data.data.pages.login.uiobjects.accessNotes.selector);
-        this.savebutton = Selector(keysObject.data.data.pages.login.uiobjects.savebutton.selector);
+        this.search = Selector(loginObject.data.data.pages.login.uiobjects.search.selector);
+        this.searchresults = Selector(loginObject.data.data.pages.login.uiobjects.searchresults.selector);
+        this.correctuser = Selector(loginObject.data.data.pages.login.uiobjects.correctuser.selector);
+        this.propertyresults = Selector(loginObject.data.data.pages.login.uiobjects.propertyresults.selector);
+        this.propertynameindashboard = Selector(loginObject.data.data.pages.login.uiobjects.propertynameindashboard.selector);
+       
+        this.keystab = Selector(keysObject.data.data.uiobjects.keystab.selector);
+        this.editbutton = Selector(keysObject.data.data.uiobjects.editbutton.selector);
+        this.leasingcheckbox = Selector(keysObject.data.data.uiobjects.leasingcheckbox.selector);
+        this.managementcheckbox = Selector(keysObject.data.data.uiobjects.managementcheckbox.selector);
+        this.tenantcheckbox = Selector(keysObject.data.data.uiobjects.tenantcheckbox.selector);
+        this.accessNotes = Selector(keysObject.data.data.uiobjects.accessNotes.selector);
+        this.savebutton = Selector(keysObject.data.data.uiobjects.savebutton.selector);
 
         this.execute = this.execute.bind(this);
 

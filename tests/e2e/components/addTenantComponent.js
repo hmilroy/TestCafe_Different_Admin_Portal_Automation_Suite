@@ -12,15 +12,16 @@ class addTenantComponent extends BaseComponent {
         // noinspection JSAnnotator
         super();
 
+        let loginObject = this.UIObjects.loginObject;
         let peoplesTabObject = this.UIObjects.peoplesTabObject;
         let leaseObject = this.UIObjects.leaseObject;
          
 
         // UI objects with initialization
-        this.spanNameHolder = Selector(leaseObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
-        this.search = Selector(leaseObject.data.data.pages.login.uiobjects.search.selector);
-        this.searchresults = Selector(leaseObject.data.data.pages.login.uiobjects.searchresults.selector);
-        this.correctuser = Selector(leaseObject.data.data.pages.login.uiobjects.correctuser.selector);
+        this.spanNameHolder = Selector(loginObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
+        this.search = Selector(loginObject.data.data.pages.login.uiobjects.search.selector);
+        this.searchresults = Selector(loginObject.data.data.pages.login.uiobjects.searchresults.selector);
+        this.correctuser = Selector(loginObject.data.data.pages.login.uiobjects.correctuser.selector);
         this.propertyresultsTenant = Selector(peoplesTabObject.data.data.pages.login.uiobjects.propertyresultsTenant.selector);
         this.peoplesTab = Selector(peoplesTabObject.data.data.pages.login.uiobjects.peoplesTab.selector);  
 

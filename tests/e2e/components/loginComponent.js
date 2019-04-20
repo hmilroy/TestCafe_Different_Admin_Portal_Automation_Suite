@@ -32,7 +32,7 @@ class LoginComponent extends BaseComponent {
             .click(this.buttonSignInWithGoogle)
             .typeText(this.inputEmail, data.email)
             .pressKey('enter')
-            .wait(8000)
+            .wait(2000)
             .typeText(this.inputPassword, data.password)
             .pressKey('enter')
             .navigateTo(config.appdata.baseUrl)

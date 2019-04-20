@@ -15,7 +15,6 @@
                     },
                     "nextbutton": {
                         "selector": "#passwordNext > content > span"
-                        
                     },
                     "spanNameHolder": {
                         "selector": "div.user-name span"

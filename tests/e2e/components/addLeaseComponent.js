@@ -15,14 +15,16 @@ class addLeaseComponent extends BaseComponent {
         super();
 
         let leaseObject = this.UIObjects.leaseObject;
-
+        let loginObject = this.UIObjects.loginObject;
+        
         // UI objects with initialization
-        this.spanNameHolder = Selector(leaseObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
-        this.search = Selector(leaseObject.data.data.pages.login.uiobjects.search.selector);
-        this.searchresults = Selector(leaseObject.data.data.pages.login.uiobjects.searchresults.selector);
-        this.correctuser = Selector(leaseObject.data.data.pages.login.uiobjects.correctuser.selector);
-        this.propertyresults = Selector(leaseObject.data.data.pages.login.uiobjects.propertyresults.selector);
-        this.propertynameindashboard = Selector(leaseObject.data.data.pages.login.uiobjects.propertynameindashboard.selector);
+        this.spanNameHolder = Selector(loginObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
+        this.search = Selector(loginObject.data.data.pages.login.uiobjects.search.selector);
+        this.searchresults = Selector(loginObject.data.data.pages.login.uiobjects.searchresults.selector);
+        this.correctuser = Selector(loginObject.data.data.pages.login.uiobjects.correctuser.selector);
+        this.propertyresults = Selector(loginObject.data.data.pages.login.uiobjects.propertyresults.selector);
+        this.propertynameindashboard = Selector(loginObject.data.data.pages.login.uiobjects.propertynameindashboard.selector);
+        
         this.paymenttab = Selector(leaseObject.data.data.pages.login.uiobjects.paymenttab.selector);
         this.addlease = Selector(leaseObject.data.data.pages.login.uiobjects.addlease.selector);
         this.fixedlease = Selector(leaseObject.data.data.pages.login.uiobjects.fixedlease.selector);

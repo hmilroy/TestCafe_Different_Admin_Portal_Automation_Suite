@@ -1,0 +1,78 @@
+{
+    "data": {
+        "pages": {
+            "login": {
+                "url": "https://dev-admin.different.com.au/",
+                "uiobjects": {
+                    "buttonSignInWithGoogle": {
+                        "selector": ".abcRioButtonContentWrapper"
+                    },
+                                    
+                    "propertyTab": {
+                        "selector": "div[class='PropertySideBar__icon PropertySideBar__icon--active property-icon']"
+                    },
+                    "editbutton": {
+                        "selector": ""
+                    },
+                    "salePrice": {
+                        "selector": ""
+                    },
+                    "Bedroom": {
+                        "selector": ""
+                    },
+                    "Bathroom": {
+                        "selector": ""
+                    },
+                    "Parking": {
+                        "selector": ""
+                    },
+                    "Type": {
+                        "selector": ""
+                    },
+                    "SwimmingPoolYes": {
+                        "selector": ""
+                    },
+                    "SwimmingPoolNo": {
+                        "selector": ""
+                    },
+                    "StrataManagedYes": {
+                        "selector": ""
+                    },
+                    "StrataManagedNo": {
+                        "selector": ""
+                    },
+                    "PreviousPropertyManagerYes": {
+                        "selector": ""
+                    },
+                    "PreviousPropertyManagerNo": {
+                        "selector": ""
+                    },
+                    "WaterEfficiencyDevicesYes": {
+                        "selector": ""
+                    },
+                    "WaterEfficiencyDevicesNo": {
+                        "selector": ""
+                    },
+                    "WaterSeparatelyMeteredNo": {
+                        "selector": ""
+                    },
+                    "WaterSeparatelyMeteredYes": {
+                        "selector": ""
+                    },
+                    "BuiltBefore1980": {
+                        "selector": ""
+                    },
+                    "BuiltBefore1980No": {
+                        "selector": ""
+                    },
+                    "HasTenantAtManagementStart": {
+                        "selector": ""
+                    },
+                    "NoTenantAtManagementStart": {
+                        "selector": ""
+                    }
+                }
+            }
+        }
+    }
+}

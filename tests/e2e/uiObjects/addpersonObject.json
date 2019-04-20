@@ -7,15 +7,6 @@
                     "buttonSignInWithGoogle": {
                         "selector": ".abcRioButtonContentWrapper"
                     },
-                    "inputEmail": {
-                        "selector": "#identifierId"
-                    },
-                    "inputPassword": {
-                        "selector": "#password > div.aCsJod.oJeWuf > div > div.Xb9hP > input"
-                    },
-                    "spanNameHolder": {
-                        "selector": "div.user-name span"
-                    },
                     "addpersonbutton": {
                         "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(3) > div"
                     },

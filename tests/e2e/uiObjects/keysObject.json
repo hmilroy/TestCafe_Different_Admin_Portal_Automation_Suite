@@ -1,43 +1,32 @@
 {
     "data": {
-        "pages": {
-            "login": {
-                "url": "https://dev-admin.different.com.au/",
-                "uiobjects": {
-                    "buttonSignInWithGoogle": {
-                        "selector": ".abcRioButtonContentWrapper"
-                    },
-                    "search": {
-                        "selector": "#differentApp > div > div.row.bordered-header > div.global-search > div > div.inputContainer > input"
-                    },
-                    "searchresults": {
-                        "selector": "#react-autowhatever-1-section-1-item-0"
-                    },
-                    "keystab": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(7) > div"
-                    },
-                    "editbutton": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(4) > button"
-                    },
-                    "leasingcheckbox": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(1) > span"
-                    },
-                    "managementcheckbox": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(2) > span"
-                    },
-                    "tenantcheckbox": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(3) > span"
-                    },
-                    "accessNotes": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(3) > div.col-xs-10 > textarea"
-                    },
-                    "savebutton": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(4) > button.button.button_main.bill-button.access_button"
-                    },
-                    "searchClose": {
-                        "selector": "#differentApp > div > div.row.bordered-header > div.global-search.col-xs-6 > div.GlobalSearchClearButton"
-                    }
-                }
+        "uiobjects": {
+            "buttonSignInWithGoogle": {
+                "selector": ".abcRioButtonContentWrapper"
+            },
+            "keystab": {
+                "selector": "div[class='PropertySideBar__icon keys-icon']"
+            },
+            "editbutton": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(4) > button"
+            },
+            "leasingcheckbox": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(1) > span"
+            },
+            "managementcheckbox": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(2) > span"
+            },
+            "tenantcheckbox": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(2) > div.col-xs-10 > label:nth-child(3) > span"
+            },
+            "accessNotes": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(3) > div.col-xs-10 > textarea"
+            },
+            "savebutton": {
+                "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.payment-section > div > div:nth-child(4) > button.button.button_main.bill-button.access_button"
+            },
+            "searchClose": {
+                "selector": "#differentApp > div > div.row.bordered-header > div.global-search.col-xs-6 > div.GlobalSearchClearButton"
             }
         }
     }

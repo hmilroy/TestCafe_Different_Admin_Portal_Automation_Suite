@@ -12,13 +12,15 @@ class addPersonComponent extends BaseComponent {
         // noinspection JSAnnotator tt
         super();
 
+        let loginObject = this.UIObjects.loginObject;
         let addpersonObject = this.UIObjects.addpersonObject;
 
         // UI objects with initialization
-        this.buttonSignInWithGoogle = Selector(addpersonObject.get('data.pages.login.uiobjects.buttonSignInWithGoogle.selector'));
-        this.inputEmail = Selector(addpersonObject.data.data.pages.login.uiobjects.inputEmail.selector);
-        this.inputPassword = Selector(addpersonObject.data.data.pages.login.uiobjects.inputPassword.selector);
-        this.spanNameHolder = Selector(addpersonObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
+        this.buttonSignInWithGoogle = Selector(loginObject.get('data.pages.login.uiobjects.buttonSignInWithGoogle.selector'));
+        this.inputEmail = Selector(loginObject.data.data.pages.login.uiobjects.inputEmail.selector);
+        this.inputPassword = Selector(loginObject.data.data.pages.login.uiobjects.inputPassword.selector);
+        this.spanNameHolder = Selector(loginObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
+        
         this.addpersonbutton = Selector(addpersonObject.data.data.pages.login.uiobjects.addpersonbutton.selector);
         this.roleemail = Selector(addpersonObject.data.data.pages.login.uiobjects.roleemail.selector);
         this.addnewpersonemail = Selector(addpersonObject.data.data.pages.login.uiobjects.addnewpersonemail.selector);
