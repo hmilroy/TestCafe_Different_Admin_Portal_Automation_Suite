@@ -27,6 +27,35 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 
+//-------(Working correctly)
+test('Add Supplier funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for (let data of t.fixtureCtx.data.addSupplier) {
+        await addSupplierComponent.execute(data);
+    }
+});
+
+
+//--------(Working correctly)
+test('Add keys funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+    }
+);
+
+
+//-------(Working correctly)
+ test('Search properties funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for(let data of t.fixtureCtx.data.search){
+        await searchComponent.execute(data);
+    }         
+});
+
+
+
+//================================================================================================
+
 
 // test('End to End test', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
@@ -48,41 +77,12 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 
-test('Add inspections funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for (let data of t.fixtureCtx.data.addInspections) {
-        await addInspectionsComponent.execute(data);
-    }
-});
-
-
-////--------(Working correctly)
-// test('Add keys funtionality', async () => {
+// test('Add inspections funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
-//     }
-// );
-
-
-//-//-------(Working correctly)
-//  test('Search properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for(let data of t.fixtureCtx.data.search){
-//         await searchComponent.execute(data);
-//     }         
-// });
-
-//-//-------(Working correctly)
-// test('Add Supplier funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addSupplier) {
-//         await addSupplierComponent.execute(data);
+//     for (let data of t.fixtureCtx.data.addInspections) {
+//         await addInspectionsComponent.execute(data);
 //     }
 // });
-
-//================================================================================================
-
-
 
 // test('Add Multiple properties funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
@@ -106,10 +106,10 @@ test('Add inspections funtionality', async () => {
 // });
 
 
-// test('Add Single properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
-// });
+test('Add Single properties funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
+});
 
 
 
