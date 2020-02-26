@@ -97,6 +97,8 @@
 import { Selector, t } from 'testcafe';
 import getValue from 'get-value';
 
+
+
 import BaseComponent from './BaseComponent';
 import config from '../libs/helpers/configHelper';
 // import { Input } from 'antd';
@@ -165,7 +167,7 @@ class addPropertyComponent extends BaseComponent {
             .typeText(this.email, data.email)
             .click(this.addnewemail)
             .typeText(this.ownername, data.ownername)
-
+            .wait(3000)
             .click(this.savebutton)
             .wait(3000);
     }
@@ -173,3 +175,5 @@ class addPropertyComponent extends BaseComponent {
 //test@different.com.au 
 //nW#&G0Z&!Xc:5
 module.exports = addPropertyComponent;
+
+///Autontication falied. Not a valid token.

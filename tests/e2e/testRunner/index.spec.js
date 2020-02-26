@@ -19,7 +19,7 @@ const loginComponent = new components.loginComponent();
 const addPropertyComponent = new components.addPropertyComponent();
 const searchComponent = new components.searchComponent();
 const addLeaseComponent = new components.addLeaseComponent();
-const addPersonComponent = new components.addPersonComponent();
+const addSupplierComponent = new components.addSupplierComponent();
 const addTenantComponent = new components.addTenantComponent();
 const addInspectionsComponent = new components.addInspectionsComponent();
 const keysComponent = new components.keysComponent();
@@ -31,9 +31,9 @@ const propertyTabComponent = new components.propertyTabComponent();
 // test('End to End test', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for(var i=0; i<10;i++){
-//     await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[3]);
-//     await addLeaseComponent.execute(t.fixtureCtx.data.addLease[3]);
-//     await addTenantComponent.execute(t.fixtureCtx.data.addTenant[3]);
+//     await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[i]);
+//     await addLeaseComponent.execute(t.fixtureCtx.data.addLease[i]);
+//     await addTenantComponent.execute(t.fixtureCtx.data.addTenant[i]);
 //     console.log("Property create completed");
 //     }
 
@@ -48,20 +48,41 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 
-// test('Add inspections funtionality', async () => {
+test('Add inspections funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for (let data of t.fixtureCtx.data.addInspections) {
+        await addInspectionsComponent.execute(data);
+    }
+});
+
+
+////--------(Working correctly)
+// test('Add keys funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addInspections) {
-//         await addInspectionsComponent.execute(data);
+//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+//     }
+// );
+
+
+//-//-------(Working correctly)
+//  test('Search properties funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for(let data of t.fixtureCtx.data.search){
+//         await searchComponent.execute(data);
+//     }         
+// });
+
+//-//-------(Working correctly)
+// test('Add Supplier funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addSupplier) {
+//         await addSupplierComponent.execute(data);
 //     }
 // });
 
+//================================================================================================
 
 
-test('Add keys funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
-    }
-);
 
 // test('Add Multiple properties funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
@@ -78,28 +99,12 @@ test('Add keys funtionality', async () => {
 // });
 
 // test('Add Tenant Funtionality', async () => {
-//     await loginComponent.execute();
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addTenant) {
 //         await addTenantComponent.execute(data);
 //     }
 // });
 
-
-// test('Add person funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addPerson) {
-//         await addPersonComponent.execute(data);
-//     }
-// });
-
-
-
-//  test('Search properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for(let data of t.fixtureCtx.data.search){
-//         await searchComponent.execute(data);
-//     }         
-// });
 
 // test('Add Single properties funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);

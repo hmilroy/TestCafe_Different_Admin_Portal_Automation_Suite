@@ -2,7 +2,7 @@
     "data": {
         "pages": {
             "login": {
-                "url": "https://dev-admin.different.com.au/",
+                "url": "https://admin-qa.different.com.au/",
                 "uiobjects": {
                     "createproperty": {
                         "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(2) > div"

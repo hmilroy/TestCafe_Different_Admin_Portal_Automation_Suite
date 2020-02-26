@@ -54,6 +54,7 @@ class propertyTabComponent extends BaseComponent {
         await t
             .click(this.search)
             .typeText(this.search, data.propertyname)
+            .wait(3000)
             .click(this.propertyresults)
 
             .click(this.propertyTab)

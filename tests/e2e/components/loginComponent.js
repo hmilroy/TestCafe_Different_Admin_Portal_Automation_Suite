@@ -31,16 +31,20 @@ class LoginComponent extends BaseComponent {
             .maximizeWindow()
             .click(this.buttonSignInWithGoogle)
             .typeText(this.inputEmail, data.email)
-            .pressKey('enter')
             .wait(2000)
-            .typeText(this.inputPassword, data.password)
             .pressKey('enter')
+            //.wait(2000)
+            .typeText(this.inputPassword, data.password)
+            .wait(2000)
+            .pressKey('enter')
+            .wait(6000)
             .navigateTo(config.appdata.baseUrl)
             .expect(this.spanNameHolder.textContent).eql(t.fixtureCtx.data.userLogin[0].displayname)
             .wait(2000)
     }
 }
 //test@different.com.au
-//nW#&G0Z&!Xc:5
+//  Diff:#&G0Z&!X@
+
 
 module.exports = LoginComponent;
