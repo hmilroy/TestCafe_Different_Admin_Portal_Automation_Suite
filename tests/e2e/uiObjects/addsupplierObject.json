@@ -31,10 +31,14 @@
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(3) > div:nth-child(4) > div > div > div > div:nth-child(2) > ul > li:nth-child(2) > input"
           },
 
+          "sameasbillingcontactracticbox": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(4) > div > p > input[type=checkbox]"
+          },
+
           "name2": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(5) > div:nth-child(1) > div > input"
           },
-                
+
           "email2": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div > input"
           },
@@ -50,8 +54,59 @@
           "website": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(7) > input"
           },
-          "category": {
-            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.business-category-multi-select > div:nth-child(2) > div > div:nth-child(4) > div.level-1-categories > input[type=checkbox]"
+
+          "advisory": {
+            "selector": "input[name = Advisory]"
+          },
+          "council": {
+            "selector": "input[name = Council]"
+          },
+          "insurance": {
+            "selector": "input[name = Insurance]"
+          },
+
+          "maintenance": {
+            "selector": "input[name = Maintenance]"
+          },
+
+          "marketing": {
+            "selector": "input[name = Marketing]"
+          },
+
+          "strata": {
+            "selector": "input[name = Strata]"
+          },
+
+          "tribunal": {
+            "selector": "input[name = Tribunal]"
+          },
+
+          "water": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.business-category-multi-select > div:nth-child(2) > div > div:nth-child(8) > div.level-1-categories > input[type=checkbox]"
+          },
+
+          "nsw": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.service-zone-multi-select > div > div > div > div:nth-child(1) > div:nth-child(1) > input[type=checkbox]"
+          },
+
+          "vic": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.service-zone-multi-select > div > div > div > div:nth-child(2) > div:nth-child(1) > input[type=checkbox]"
+          },
+
+          "qld": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.service-zone-multi-select > div > div > div > div:nth-child(3) > div:nth-child(1) > input[type=checkbox]"
+          },
+
+          "isgoodforurgentrequests": {
+            "selector": "input[name = isGoodForUrgentRequests]"
+          },
+
+          "isavailableonweekends": {
+            "selector": "input[name = isAvailableOnWeekends]"
+          },
+
+          "isavailableoutsidenormalhours": {
+            "selector": "input[name = isAvailableOutsideNormalHours]"
           },
 
           "calloutfee": {
@@ -67,6 +122,15 @@
 
           "abn": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(16) > input"
+          },
+          "bsb": {
+            "selector": "#bsb"
+          },
+          "accountno": {
+            "selector": "#accountNumber"
+          },
+          "accountholder": {
+            "selector": "#accountHolderName"
           },
           "savebutton": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div > button.button.button_main"

@@ -6,7 +6,6 @@
 import _string from 'underscore.string';
 import GoogleSpreadsheet from 'google-spreadsheet';
 import Promise from 'bluebird';
-
 import config from './configHelper';
 
 class dataHelper {

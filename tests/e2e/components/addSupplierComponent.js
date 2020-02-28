@@ -1,85 +1,71 @@
-'use strict';
+"use strict";
 
-import { Selector, t } from 'testcafe';
-import BaseComponent from './BaseComponent';
+import { Selector, t } from "testcafe";
+import BaseComponent from "./BaseComponent";
 
 class addSupplierComponent extends BaseComponent {
-    constructor() {
-        // noinspection JSAnnotator tt
-        super();
+  constructor() {
+    // noinspection JSAnnotator tt
+    super();
 
-        let loginObject = this.UIObjects.loginObject;
-        let addsupplierObject = this.UIObjects.addsupplierObject;
+    let addsupplierObject = this.UIObjects.addsupplierObject;
 
-        // UI objects with initialization
-        this.buttonSignInWithGoogle = Selector(loginObject.get('data.pages.login.uiobjects.buttonSignInWithGoogle.selector'));
-        this.inputEmail = Selector(loginObject.data.data.pages.login.uiobjects.inputEmail.selector);
-        this.inputPassword = Selector(loginObject.data.data.pages.login.uiobjects.inputPassword.selector);
-        this.spanNameHolder = Selector(loginObject.data.data.pages.login.uiobjects.spanNameHolder.selector);      
-        this.addpersonbutton = Selector(addsupplierObject.data.data.pages.login.uiobjects.addpersonbutton.selector);
-
-        this.abn = Selector(addsupplierObject.data.data.pages.login.uiobjects.abn.selector);
-        this.suppliername = Selector(addsupplierObject.data.data.pages.login.uiobjects.suppliername.selector);
-        this.name = Selector(addsupplierObject.data.data.pages.login.uiobjects.name.selector);
-        this.name2 = Selector(addsupplierObject.data.data.pages.login.uiobjects.name2.selector);
-        this.email = Selector(addsupplierObject.data.data.pages.login.uiobjects.email.selector);
-        this.email2 = Selector(addsupplierObject.data.data.pages.login.uiobjects.email2.selector);
-        this.address = Selector(addsupplierObject.data.data.pages.login.uiobjects.address.selector);
-        this.address2 = Selector(addsupplierObject.data.data.pages.login.uiobjects.address2.selector);
-        this.phone = Selector(addsupplierObject.data.data.pages.login.uiobjects.phone.selector);
-        this.phone2 = Selector(addsupplierObject.data.data.pages.login.uiobjects.phone2.selector);
-        this.website = Selector(addsupplierObject.data.data.pages.login.uiobjects.website.selector);
-        this.category = Selector(addsupplierObject.data.data.pages.login.uiobjects.category.selector);
-        this.calloutfee = Selector(addsupplierObject.data.data.pages.login.uiobjects.calloutfee.selector);
-        this.emergehcycallfee = Selector(addsupplierObject.data.data.pages.login.uiobjects.emergehcycallfee.selector);
-        this.notes = Selector(addsupplierObject.data.data.pages.login.uiobjects.notes.selector);
-        this.savebutton = Selector(addsupplierObject.data.data.pages.login.uiobjects.savebutton.selector);   
-
-        this.execute = this.execute.bind(this);
-
+    // shorter code for UI objects with initialization (by Sanath)
+    for (let [key, value] of Object.entries(
+      addsupplierObject.data.data.pages.login.uiobjects
+    )) {
+      this[key] = Selector(value.selector);
     }
-    //Test
-    async execute(data) {
-        // const roleselect = Selector('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.form-group.row.element.main-selection > select');
-        // const roleoption = roleselect.find('option');
+    this.execute = this.execute.bind(this);
+  }
+  //Test
+  async execute(data) {
+    await t
 
-        // const catagoryselect = Selector('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div:nth-child(1) > div.form-group.row.element.main-selection.category > div > div > select');
-        // const catagoryoption = catagoryselect.find('option');
+      .click(this.addpersonbutton)
+      .wait(2000)
+      .typeText(this.suppliername, data.suppliername)
+      .typeText(this.name, data.name)
+      .typeText(this.email, data.email)
+      .typeText(this.address, data.address)
+      .typeText(this.phone, data.phone);
 
+    if (data.sameasbillingcontact == "Yes") {
+      await t.click(this.sameasbillingcontactracticbox);
+    } else {
+      await t
+        .typeText(this.name2, data.name2)
+        .typeText(this.email2, data.email2)
+        .typeText(this.address2, data.address2)
+        .typeText(this.phone2, data.phone2);
+    }
+    await t
+      .typeText(this.website, data.website)
+      .typeText(this.calloutfee, data.calloutfee)
+      .typeText(this.emergehcycallfee, data.emergehcycallfee)
+      .typeText(this.notes, data.notes);
 
-        await t
+    const category = data.category.toLowerCase();
+    await t
+    .click(this[category]);
 
-            .click(this.addpersonbutton)
-            .wait(4000)
+    const servicearea = data.servicearea.toLowerCase();
+    await t
+    .click(this[servicearea]);
 
+    await t
+      .click(this.isgoodforurgentrequests)
+      .click(this.isavailableonweekends)
+      .click(this.isavailableoutsidenormalhours);
 
-            .typeText(this.suppliername, data.suppliername)
-
-            .typeText(this.name, data.name)
-            .typeText(this.name2, data.name2)
-            .typeText(this.email, data.email)
-            .wait(2000)
-            .typeText(this.email2, data.email2)
-
-            .typeText(this.address, data.address)
-            .typeText(this.address2, data.address2)
-
-            .typeText(this.phone, data.phone)
-            .typeText(this.phone2, data.phone2)
-
-            .typeText(this.website, data.website)
-            .typeText(this.calloutfee, data.calloutfee)
-
-            .typeText(this.emergehcycallfee, data.emergehcycallfee)
-            .typeText(this.notes, data.notes)
-           
-            .typeText(this.abn, data.abn)
-            .wait(5000)
-            .click(this.savebutton)
-            .wait(18000);
-          
-    
-   }
+    await t
+      .typeText(this.abn, data.abn)
+      .typeText(this.bsb, data.bsb)
+      .typeText(this.accountno, data.accountno)
+      .typeText(this.accountholder, data.accountholder)
+      .click(this.savebutton)
+      .wait(12000);
+  }
 }
 
 module.exports = addSupplierComponent;
