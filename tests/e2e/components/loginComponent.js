@@ -33,7 +33,6 @@ class LoginComponent extends BaseComponent {
             .typeText(this.inputEmail, data.email)
             .wait(2000)
             .pressKey('enter')
-            //.wait(2000)
             .typeText(this.inputPassword, data.password)
             .wait(2000)
             .pressKey('enter')
