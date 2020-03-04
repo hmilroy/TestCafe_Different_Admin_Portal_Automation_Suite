@@ -37,11 +37,11 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 //--------(Working correctly)
-test('Add keys funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
-    }
-);
+// test('Add keys funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+//     }
+// );
 
 
 // //-------(Working correctly)
@@ -108,10 +108,10 @@ test('Add keys funtionality', async () => {
 // });
 
 
-// test('Add Single properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
-// });
+test('Add Single properties funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
+});
 
 
 

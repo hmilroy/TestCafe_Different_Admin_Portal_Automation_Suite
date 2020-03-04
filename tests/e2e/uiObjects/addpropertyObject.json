@@ -5,8 +5,7 @@
                 "url": "https://admin-qa.different.com.au/",
                 "uiobjects": {
                     "createproperty": {
-                        "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(2) > div"
-                                     
+                        "selector": "#differentApp > div > div.row.bordered-header > div.icon-bar.col-xs-3.row.end-xs > a:nth-child(2) > div"               
                     },               
                     "cantfind": {
                         "selector": "#differentApp > div > div.content-dock > div > form > div.inner-form.add-property-form > div:nth-child(1) > div > div > div.col-xs-offset-9.col-xs-3.cant-find > span"
