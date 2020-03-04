@@ -1,69 +1,114 @@
-/**
- * @file propertyTabComponent
- * @author Milroy Perera
- */
-'use strict';
+"use strict";
 
-import { Selector, t } from 'testcafe';
-import getValue from 'get-value';
-import BaseComponent from './BaseComponent';
-import config from '../libs/helpers/configHelper';
+import { Selector, t } from "testcafe";
+import BaseComponent from "./BaseComponent";
 
 class propertyTabComponent extends BaseComponent {
-    constructor() {
-        // noinspection JSAnnotator
-        super();
+  constructor() {
+    // noinspection JSAnnotator
+    super();
 
-        let propertyTabObject = this.UIObjects.propertyTabObject;
-        let loginObject = this.UIObjects.loginObject;
+    let propertyTabObject = this.UIObjects.propertyTabObject;
+    let loginObject = this.UIObjects.loginObject;
 
-        // UI objects with initialization
-        this.search = Selector(loginObject.data.data.pages.login.uiobjects.search.selector);
-        this.searchresults = Selector(loginObject.data.data.pages.login.uiobjects.searchresults.selector);
-        this.correctuser = Selector(loginObject.data.data.pages.login.uiobjects.correctuser.selector);
-        this.propertyresults = Selector(loginObject.data.data.pages.login.uiobjects.propertyresults.selector);
-        this.propertynameindashboard = Selector(loginObject.data.data.pages.login.uiobjects.propertynameindashboard.selector);
-        
-        this.propertyTab = Selector(propertyTabObject.data.data.pages.login.uiobjects.propertyTab.selector);
-        this.editbutton = Selector(propertyTabObject.data.data.pages.login.uiobjects.editbutton.selector);
-        this.salePrice = Selector(propertyTabObject.data.data.pages.login.uiobjects.salePrice.selector);
-        this.Bedroom = Selector(propertyTabObject.data.data.pages.login.uiobjects.Bedroom.selector);
-        this.Bathroom = Selector(propertyTabObject.data.data.pages.login.uiobjects.Bathroom.selector);
-        this.Parking = Selector(propertyTabObject.data.data.pages.login.uiobjects.Parking.selector);
-        this.Type = Selector(propertyTabObject.data.data.pages.login.uiobjects.Type.selector);
-        this.SwimmingPoolYes = Selector(propertyTabObject.data.data.pages.login.uiobjects.SwimmingPoolYes.selector);
-        this.SwimmingPoolNo = Selector(propertyTabObject.data.data.pages.login.uiobjects.SwimmingPoolNo.selector);
-        this.StrataManagedYes = Selector(propertyTabObject.data.data.pages.login.uiobjects.StrataManagedYes.selector);
-        this.StrataManagedNo = Selector(propertyTabObject.data.data.pages.login.uiobjects.StrataManagedNo.selector);
-        this.PreviousPropertyManagerYes = Selector(propertyTabObject.data.data.pages.login.uiobjects.PreviousPropertyManagerYes.selector);
-        this.PreviousPropertyManagerNo = Selector(propertyTabObject.data.data.pages.login.uiobjects.PreviousPropertyManagerNo.selector);
-        this.WaterEfficiencyDevicesYes  = Selector(propertyTabObject.data.data.pages.login.uiobjects.WaterEfficiencyDevicesYes.selector);
-        this.WaterEfficiencyDevicesNo = Selector(propertyTabObject.data.data.pages.login.uiobjects.WaterEfficiencyDevicesNo.selector);
-        this.WaterSeparatelyMeteredYes = Selector(propertyTabObject.data.data.pages.login.uiobjects.WaterSeparatelyMeteredYes.selector);
-        this.WaterSeparatelyMeteredNo = Selector(propertyTabObject.data.data.pages.login.uiobjects.WaterSeparatelyMeteredNo.selector);
-        this.BuiltBefore1980 = Selector(propertyTabObject.data.data.pages.login.uiobjects.BuiltBefore1980.selector);
-        this.BuiltBefore1980No = Selector(propertyTabObject.data.data.pages.login.uiobjects.BuiltBefore1980No.selector);
-        this.HasTenantAtManagementStart = Selector(propertyTabObject.data.data.pages.login.uiobjects.HasTenantAtManagementStart.selector);
-        this.NoTenantAtManagementStart = Selector(propertyTabObject.data.data.pages.login.uiobjects.NoTenantAtManagementStart.selector);
-
-        this.execute = this.execute.bind(this);
-
+    // UI objects with initialization
+    for (let [key, value] of Object.entries(
+      loginObject.data.data.pages.login.uiobjects
+    )) {
+      this[key] = Selector(value.selector);
     }
-    async execute(data) {
+    for (let [key, value] of Object.entries(
+      propertyTabObject.data.data.pages.login.uiobjects
+    )) {
+      this[key] = Selector(value.selector);
+    }
+    this.execute = this.execute.bind(this);
+  }
 
-        await t
-            .click(this.search)
-            .typeText(this.search, data.propertyname)
-            .wait(3000)
-            .click(this.propertyresults)
+  async execute(data) {
+    const typeSelect = Selector(
+      "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(5) > select"
+    );
+    const typeOption = typeSelect.find("option");
 
-            .click(this.propertyTab)
-            .click(this.editbutton)
+    await t
+      .click(this.search)
+      .typeText(this.search, data.propertyname)
+      .wait(3000)
+      .click(this.propertyresults)
+      .wait(1000)
+      .click(this.propertyTab)
+      .wait(2000)
+      .click(this.editbutton)
+      .typeText(this.saleprice, data.saleprice)
+      .typeText(this.bedroom, data.bedroom)
+      .typeText(this.bathroom, data.bathroom)
+      .typeText(this.parking, data.parking);
 
-           // .typeText(this.salePrice, data.salePrice)
-          //  .click(this.savebutton)
+    await t.click(typeSelect).click(typeOption.withExactText(data.type));
 
+    if (data.swimmingpool == "Yes") {
+      await t.click(this.SwimmingPoolYes);
+    } else {
+      await t.click(this.SwimmingPoolNo);
     }
 
+    if (data.stratamanaged == "Yes") {
+      await t.click(this.StrataManagedYes);
+    } else {
+      await t.click(this.StrataManagedNo);
+    }
+
+    if (data.previouspropertymanager == "Yes") {
+      await t.click(this.PreviousPropertyManagerYes);
+    } else {
+      await t.click(this.PreviousPropertyManagerNo);
+    }
+
+    if (data.waterefficiencydevicesinstalled == "Yes") {
+      await t.click(this.WaterEfficiencyDevicesYes);
+    } else {
+      await t.click(this.WaterEfficiencyDevicesNo);
+    }
+
+    if (data.waterseparatelymetered == "Yes") {
+      await t.click(this.WaterSeparatelyMeteredYes);
+    } else {
+      await t.click(this.WaterSeparatelyMeteredNo);
+    }
+
+    if (data.builtbefore1980 == "Yes") {
+      await t.click(this.BuiltBefore1980);
+    } else {
+      await t.click(this.BuiltBefore1980No);
+    }
+
+    if (data.hastenantatmanagementstart == "Yes") {
+      await t.click(this.HasTenantAtManagementStart);
+    } else {
+      await t.click(this.NoTenantAtManagementStart);
+    }
+
+    //await t.click(this.ManagementStartDate);
+    //await t.wait(2000)
+   // await t.click(this.Date);
+  // .setNativeDialogHandler(() => true)
+   //.click(this.Date);
+
+    // switch (data.swimmingpool) {
+    //   case "Yes":
+    //     await t.click(this.SwimmingPoolYes);
+    //     break;
+    //   case "No":
+    //     await t.click(this.SwimmingPoolNo);
+    //     break;
+    //   default:
+    //     break;
+    // }
+    await t.wait(25000);
+
+    // .typeText(this.salePrice, data.salePrice)
+    //  .click(this.savebutton)
+  }
 }
 module.exports = propertyTabComponent;

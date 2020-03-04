@@ -11,9 +11,7 @@ class addSupplierComponent extends BaseComponent {
     let addsupplierObject = this.UIObjects.addsupplierObject;
 
     // shorter code for UI objects with initialization (by Sanath)
-    for (let [key, value] of Object.entries(
-      addsupplierObject.data.data.pages.login.uiobjects
-    )) {
+    for (let [key, value] of Object.entries(addsupplierObject.data.data.pages.login.uiobjects)) {
       this[key] = Selector(value.selector);
     }
     this.execute = this.execute.bind(this);
@@ -58,11 +56,18 @@ class addSupplierComponent extends BaseComponent {
       .click(this.isavailableonweekends)
       .click(this.isavailableoutsidenormalhours);
 
-    await t
+     await t
       .typeText(this.abn, data.abn)
       .typeText(this.bsb, data.bsb)
       .typeText(this.accountno, data.accountno)
       .typeText(this.accountholder, data.accountholder)
+     
+      // .click(this.upload)
+      // .wait(2000)
+      // .click(this.upload)
+      // await t.setFilesToUpload('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div', '/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/tests/UploadFiles/Service.rt45 Costs #$%^&*()_+ - $90 + GST.pdf')
+      // .wait(12000)
+
       .click(this.savebutton)
       .wait(12000);
   }

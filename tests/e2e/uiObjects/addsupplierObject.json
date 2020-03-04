@@ -132,6 +132,9 @@
           "accountholder": {
             "selector": "#accountHolderName"
           },
+          "upload": {
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div"
+          },             
           "savebutton": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div > button.button.button_main"
           }

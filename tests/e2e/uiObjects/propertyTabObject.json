@@ -9,69 +9,75 @@
                     },
                                     
                     "propertyTab": {
-                        "selector": "div[class='PropertySideBar__icon PropertySideBar__icon--active property-icon']"
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(2) > div"
                     },
                     "editbutton": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div.bottom-buttons > button"
                     },
-                    "salePrice": {
-                        "selector": ""
+                    "saleprice": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(1) > input"
                     },
-                    "Bedroom": {
-                        "selector": ""
+                    "bedroom": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(2) > input"
                     },
-                    "Bathroom": {
-                        "selector": ""
+                    "bathroom": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(3) > input"
                     },
-                    "Parking": {
-                        "selector": ""
+                    "parking": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(4) > input"
                     },
-                    "Type": {
-                        "selector": ""
+                    "type": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(5) > select"
                     },
                     "SwimmingPoolYes": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(6) > div:nth-child(2) > input"
                     },
                     "SwimmingPoolNo": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(6) > div:nth-child(3) > input"
                     },
                     "StrataManagedYes": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(7) > div:nth-child(2) > input"
                     },
                     "StrataManagedNo": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(7) > div:nth-child(3) > input"
                     },
                     "PreviousPropertyManagerYes": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(8) > div:nth-child(2) > input"
                     },
                     "PreviousPropertyManagerNo": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(8) > div:nth-child(3) > input"
                     },
                     "WaterEfficiencyDevicesYes": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(9) > div:nth-child(2) > input"
                     },
                     "WaterEfficiencyDevicesNo": {
-                        "selector": ""
-                    },
-                    "WaterSeparatelyMeteredNo": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(9) > div:nth-child(3) > input"
                     },
                     "WaterSeparatelyMeteredYes": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(10) > div:nth-child(2) > input"
+                    },
+                    "WaterSeparatelyMeteredNo": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(10) > div:nth-child(3) > input"
                     },
                     "BuiltBefore1980": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(11) > div:nth-child(2) > input"
                     },
                     "BuiltBefore1980No": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(11) > div:nth-child(3) > input"
                     },
                     "HasTenantAtManagementStart": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(12) > div:nth-child(2) > input"
                     },
                     "NoTenantAtManagementStart": {
-                        "selector": ""
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(12) > div:nth-child(3) > input"
+                    },
+                    "ManagementStartDate": {
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div > div > div.view-property-form-container > form > div > div:nth-child(13) > div > div:nth-child(1)"
+                    },
+                    "Date":{
+                        "selector":"body > div:nth-child(5) > div > div:nth-child(1) > div > div > div > div > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > div > div > div:nth-child(3) > button:nth-child(4) > span"
                     }
-                }
+                }          
             }
         }
     }

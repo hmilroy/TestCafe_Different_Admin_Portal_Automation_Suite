@@ -10,10 +10,10 @@
                    
                     "paymenttab": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.property > div > a:nth-child(4) > div"
-                    },
+                    },              
                     "addlease": {
-                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div > div.add-lease-button"
-                    },
+                        "selector": "[class='add-lease-button']"
+                    },             
                     "fixedlease": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > label:nth-child(2)"
                     },

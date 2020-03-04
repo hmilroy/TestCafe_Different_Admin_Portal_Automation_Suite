@@ -27,7 +27,7 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 
-// //-------(Working correctly)
+//-------(Working correctly)
 // test('Add Supplier funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addSupplier) {
@@ -36,22 +36,28 @@ const propertyTabComponent = new components.propertyTabComponent();
 // });
 
 
-// //--------(Working correctly)
-// test('Add keys funtionality', async () => {
+//--------(Working correctly)
+test('Add keys funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+    }
+);
+
+
+// //-------(Working correctly)
+//  test('Search properties funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+//     for(let data of t.fixtureCtx.data.search){
+//         await searchComponent.execute(data);
+//     }         
+// });
+
+// //--------(Working correctly)
+// test('Fill Property Tab funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     await propertyTabComponent.execute(t.fixtureCtx.data.propertyTab[0]);
 //     }
 // );
-
-
-//-------(Working correctly)
- test('Search properties funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for(let data of t.fixtureCtx.data.search){
-        await searchComponent.execute(data);
-    }         
-});
-
 
 
 //================================================================================================
@@ -69,11 +75,7 @@ const propertyTabComponent = new components.propertyTabComponent();
 // }
 // );
 
-// test('Fill Property Tab funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await propertyTabComponent.execute(t.fixtureCtx.data.propertyTab[0]);
-//     }
-// );
+
 
 
 
