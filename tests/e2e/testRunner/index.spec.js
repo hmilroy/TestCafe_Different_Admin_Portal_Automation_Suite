@@ -14,6 +14,7 @@ fixture`:Different Admin Portal Test Suite`
             ctx.data = data.data;
         });
     });
+    
 
 const loginComponent = new components.loginComponent();
 const addPropertyComponent = new components.addPropertyComponent();
@@ -27,7 +28,7 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 
-//-------(Working correctly)
+////-------(Working correctly)
 // test('Add Supplier funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addSupplier) {
@@ -60,7 +61,41 @@ const propertyTabComponent = new components.propertyTabComponent();
 // );
 
 
+//--------(Working correctly)
+test('Add Single properties funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
+});
+
+
+// //--------(Working correctly)
+// test('Add Lease Funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addLease) {
+//         await addLeaseComponent.execute(data);
+//     }
+// });
+
+// // //--------(Working correctly)
+// test('Add Tenant Funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addTenant) {
+//         await addTenantComponent.execute(data);
+//     }
+// });
+
+// //--------(Working correctly)
+// test('Add Multiple properties funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addMultilpeProperties) {
+//         await addPropertyComponent.execute(data);
+//     }
+// });
+
 //================================================================================================
+
+
+
 
 
 // test('End to End test', async () => {
@@ -76,9 +111,6 @@ const propertyTabComponent = new components.propertyTabComponent();
 // );
 
 
-
-
-
 // test('Add inspections funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addInspections) {
@@ -86,32 +118,14 @@ const propertyTabComponent = new components.propertyTabComponent();
 //     }
 // });
 
-// test('Add Multiple properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addMultilpeProperties) {
-//         await addPropertyComponent.execute(data);
-//     }
-// });
-
-// test('Add Lease Funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addLease) {
-//         await addLeaseComponent.execute(data);
-//     }
-// });
-
-// test('Add Tenant Funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addTenant) {
-//         await addTenantComponent.execute(data);
-//     }
-// });
 
 
-test('Add Single properties funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
-});
+
+
+
+
+
+
 
 
 

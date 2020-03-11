@@ -1,4 +1,3 @@
-
 /**
  * @file Login Component.
  * @author Hasitha Gamage

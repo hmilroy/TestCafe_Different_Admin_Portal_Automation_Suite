@@ -58,6 +58,9 @@
                     },           
                    "editbutton":{
                        "selector": "button[value='edit']"
+                    },
+                    "propertynameholder":{
+                        "selector": "[class='section-header header__property']"
                     }
                }
             }

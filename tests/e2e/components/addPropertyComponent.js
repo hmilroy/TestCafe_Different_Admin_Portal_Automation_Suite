@@ -1,6 +1,6 @@
 'use strict';
 
-import { Selector, t, ClientFunction } from 'testcafe';
+import { Selector, t } from 'testcafe';
 import BaseComponent from './BaseComponent';
 
 class addPropertyComponent extends BaseComponent {
@@ -30,9 +30,6 @@ class addPropertyComponent extends BaseComponent {
 
        
         await t
-       // .navigateTo(config.appdata.baseUrl)
-       //.expect(this.spanNameHolder.textContent).eql(t.fixtureCtx.data.userLogin[0].displayname)
-
             .click(this.createproperty)
             .wait(2000)
             .click(this.cantfind)
@@ -59,9 +56,11 @@ class addPropertyComponent extends BaseComponent {
             .typeText(this.ownername, data.ownername)
             .wait(2000)
             .click(this.savebutton)
-            .wait(5000);
+            .wait(5000)
+            .expect(this.propertynameholder.textContent).contains(t.fixtureCtx.data.addSingleProperty[0].propertyname)
+            .wait(2000);
     }
 }
 //test@different.com.au 
-//nW#&G0Z&!Xc:5
+//Diff:#&G0Z&!X@
 module.exports = addPropertyComponent;

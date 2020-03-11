@@ -62,11 +62,12 @@ class addSupplierComponent extends BaseComponent {
       .typeText(this.accountno, data.accountno)
       .typeText(this.accountholder, data.accountholder)
      
-      // .click(this.upload)
-      // .wait(2000)
-      // .click(this.upload)
-      // await t.setFilesToUpload('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div', '/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/tests/UploadFiles/Service.rt45 Costs #$%^&*()_+ - $90 + GST.pdf')
-      // .wait(12000)
+     // .click(this.upload)
+      .wait(2000)
+     // .click(this.upload)
+      await t.setFilesToUpload('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div', '/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/tests/UploadFiles/GST.pdf')
+                                                                                                                                                               
+      .wait(12000)
 
       .click(this.savebutton)
       .wait(12000);

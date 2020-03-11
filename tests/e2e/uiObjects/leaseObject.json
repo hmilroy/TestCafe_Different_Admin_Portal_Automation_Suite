@@ -28,7 +28,7 @@
                     },
                     "leasestart": {
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div > div:nth-child(5) > div:nth-child(2) > div > div > span > div > input"
-                    },
+                    },              
                     "leasestartdate": {
                         "selector": "body > div:nth-child(6) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
                     },
@@ -66,8 +66,9 @@
                         "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > form > div.inner-form.view-person > div.bottom-buttons > button"
                     },
                     "calenderpicker": {
-                        "selector": "input[class='ant-calendar-picker-input ant-input']"
-                    },
+                        "selector": "#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div.leases-section > div:nth-child(2) > div:nth-child(5) > div:nth-child(2) > div > div > span"
+                        
+                                            },
                     "year": {
                         "selector": "a[class='ant-calendar-year-panel-year']"
                         

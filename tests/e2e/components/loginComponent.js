@@ -15,13 +15,14 @@ class LoginComponent extends BaseComponent {
 
         let loginObject = this.UIObjects.loginObject;
 
-        // UI objects with initialization
+        // UI objects with initialization 
         this.buttonSignInWithGoogle = Selector(loginObject.get('data.pages.login.uiobjects.buttonSignInWithGoogle.selector'));
-        this.inputEmail = Selector(loginObject.data.data.pages.login.uiobjects.inputEmail.selector);
-        this.inputPassword = Selector(loginObject.data.data.pages.login.uiobjects.inputPassword.selector);
-        this.spanNameHolder = Selector(loginObject.data.data.pages.login.uiobjects.spanNameHolder.selector);
 
-        this.execute = this.execute.bind(this);
+        for (let [key, value] of Object.entries(loginObject.data.data.pages.login.uiobjects)) {
+            this[key] = Selector(value.selector);
+          }
+
+          this.execute = this.execute.bind(this);
     }
 
     async execute(data) {
@@ -42,8 +43,6 @@ class LoginComponent extends BaseComponent {
             .wait(2000)
     }
 }
+module.exports = LoginComponent;
 //test@different.com.au
 //  Diff:#&G0Z&!X@
-
-
-module.exports = LoginComponent;
