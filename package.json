@@ -1,7 +1,7 @@
 {
-  "name": "cafeseed",
+  "name": "admin-portal",
   "version": "1.0.0",
-  "description": "Seed project for test cafe",
+  "description": "Admin portal funtionality test framework",
   "main": "index.js",
   "scripts": {
     "e2e": "BROWSER=${BROWSER:-all}; node node_modules/testcafe/bin/testcafe.js $BROWSER **/**/index.spec.js --skip-js-errors --reporter html-testrail",
@@ -13,11 +13,13 @@
     "bluebird": "^3.5.3",
     "config": "^3.0.1",
     "deasync": "^0.1.14",
+    "express": "^4.17.1",
     "get-value": "^3.0.1",
     "google-spreadsheet": "^2.0.6",
     "memory-cache": "^0.2.0",
     "require-all": "^3.0.0",
-    "testcafe": "^0.23.3",
+    "testcafe": "1.8.2",
+    "testcafe-reporter-html": "^1.4.6",
     "testcafe-reporter-html-testrail": "^3.1.0",
     "underscore": "^1.9.1",
     "underscore.string": "^3.3.5"
@@ -25,5 +27,16 @@
   "devDependencies": {
     "antd": "^3.16.1",
     "material-ui": "^0.20.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmilroy/TestCafe_Different_Admin_Portal_Automation_Suite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hmilroy/TestCafe_Different_Admin_Portal_Automation_Suite/issues"
+  },
+  "homepage": "https://github.com/hmilroy/TestCafe_Different_Admin_Portal_Automation_Suite#readme"
 }

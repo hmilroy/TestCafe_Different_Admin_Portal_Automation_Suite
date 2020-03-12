@@ -35,6 +35,9 @@
                     },
                     "closeSerchButton": {
                         "selector": "#differentApp > div > div.row.bordered-header > div.global-search.col-xs-6 > div.GlobalSearchClearButton"
+                    },
+                    "propertynameholder":{
+                        "selector": "[class='section-header header__property']"
                     }
                 }
             }

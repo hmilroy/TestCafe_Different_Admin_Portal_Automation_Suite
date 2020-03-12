@@ -1,4 +1,4 @@
-# TestCafe-Seed
+# TestCafe-Admin Portal
 
 This is Automation project for TestCafe E2E testing, this seed rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
@@ -15,7 +15,6 @@ This testcafe project contains following code/folder structure.
 * `libs/helpers/` - contains all reusable helper classes
   * `libs/helpers/configHelper.js` - contains all the methods which use for handling configurations
   * `libs/helpers/dataHelper.js` - include methods which use for handling data from remote data resource(eg - Google Spreadsheet)
-* `login/` - contains login related all the test-case files
 * `uiObjects/` - include all the Uiobjects which stored as json files
 
 

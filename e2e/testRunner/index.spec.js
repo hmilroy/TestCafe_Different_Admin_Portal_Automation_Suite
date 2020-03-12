@@ -29,6 +29,21 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 ////-------(Working correctly)
+test('End to End test >> Property create', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for(var i=0; i<10;i++){
+    await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[0]);
+    await addLeaseComponent.execute(t.fixtureCtx.data.addLease[0]);
+    await addTenantComponent.execute(t.fixtureCtx.data.addTenant[0]);
+    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+
+    console.log("Property create completed");
+    }
+
+}
+);
+
+////-------(Working correctly)
 // test('Add Supplier funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addSupplier) {
@@ -61,11 +76,11 @@ const propertyTabComponent = new components.propertyTabComponent();
 // );
 
 
-//--------(Working correctly)
-test('Add Single properties funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
-});
+// //--------(Working correctly)
+// test('Add Single properties funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     await addPropertyComponent.execute(t.fixtureCtx.data.addSingleProperty[0]);
+// });
 
 
 // //--------(Working correctly)
@@ -76,7 +91,7 @@ test('Add Single properties funtionality', async () => {
 //     }
 // });
 
-// // //--------(Working correctly)
+// //--------(Working correctly)
 // test('Add Tenant Funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addTenant) {
@@ -98,17 +113,7 @@ test('Add Single properties funtionality', async () => {
 
 
 
-// test('End to End test', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for(var i=0; i<10;i++){
-//     await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[i]);
-//     await addLeaseComponent.execute(t.fixtureCtx.data.addLease[i]);
-//     await addTenantComponent.execute(t.fixtureCtx.data.addTenant[i]);
-//     console.log("Property create completed");
-//     }
 
-// }
-// );
 
 
 // test('Add inspections funtionality', async () => {

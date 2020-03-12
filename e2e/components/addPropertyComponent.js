@@ -57,8 +57,8 @@ class addPropertyComponent extends BaseComponent {
             .wait(2000)
             .click(this.savebutton)
             .wait(5000)
-            .expect(this.propertynameholder.textContent).contains(t.fixtureCtx.data.addSingleProperty[0].propertyname)
-            .wait(2000);
+           // .expect(this.propertynameholder.textContent).contains(t.fixtureCtx.data.addMultilpeProperties[i].propertyname)
+          //  .wait(2000);
     }
 }
 //test@different.com.au 
