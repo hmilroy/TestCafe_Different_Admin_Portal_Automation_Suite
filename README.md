@@ -1,6 +1,6 @@
 # TestCafe Automation Suite for Different Admin Portal
 
-This is Automation project for TestCafe E2E testing, this seed rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
+This is TestCafe Automation Suite for Different Admin Portal, this framework rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
 We use [TestCafe](https://github.com/DevExpress/testcafe) as our UI automation framework.
 
