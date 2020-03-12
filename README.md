@@ -68,6 +68,6 @@ $ testcafe remote e2e
 If you need to run test cases in mobile devices please execute following command, it will generate QR code then you can scan that and run test in your mobile device
 ```sh
 $ testcafe remote e2e --qr-code
-
+```
 E2E  tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
 <br>
