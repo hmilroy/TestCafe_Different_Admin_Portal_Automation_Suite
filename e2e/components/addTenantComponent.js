@@ -31,17 +31,14 @@ class addTenantComponent extends BaseComponent {
         this.leaseSelector = Selector(peoplesTabObject.data.data.pages.login.uiobjects.leaseSelector.selector);
         this.leaseoptions = Selector(peoplesTabObject.data.data.pages.login.uiobjects.leaseoptions.selector); 
         this.searchClose = Selector(leaseObject.data.data.pages.login.uiobjects.searchClose.selector);
-        
-                
+                        
         this.execute = this.execute.bind(this);
 
     }
     async execute(data) {
 
        // const leaseSelector = Selector('#differentApp > div > div.content-dock > div > div.col.dashboard-content-area > div > div:nth-child(6) > form > div > div.person-role-form > div:nth-child(1) > div:nth-child(2) > select');
-       
-
-        await t
+       await t
 
         .click(this.search)
         .typeText(this.search, data.propertyname)
@@ -66,9 +63,6 @@ class addTenantComponent extends BaseComponent {
         .click(this.searchClose);
 
        // .click(this.paymenttab);
-       
-
-
 
     }
 

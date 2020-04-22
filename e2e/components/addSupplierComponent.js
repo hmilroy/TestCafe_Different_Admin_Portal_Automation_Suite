@@ -21,7 +21,7 @@ class addSupplierComponent extends BaseComponent {
     await t
 
       .click(this.addpersonbutton)
-      .wait(2000)
+      .wait(4000)
       .typeText(this.suppliername, data.suppliername)
       .typeText(this.name, data.name)
       .typeText(this.email, data.email)
@@ -65,9 +65,9 @@ class addSupplierComponent extends BaseComponent {
      // .click(this.upload)
       .wait(2000)
      // .click(this.upload)
-      await t.setFilesToUpload('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div', '/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/tests/UploadFiles/GST.pdf')
+  //    await t.setFilesToUpload('#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div', '/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/tests/UploadFiles/GST.pdf')
                                                                                                                                                                
-      .wait(12000)
+     // .wait(12000)
 
       .click(this.savebutton)
       .wait(12000);

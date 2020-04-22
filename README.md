@@ -1,4 +1,4 @@
-# TestCafe-Admin Portal
+# TestCafe_Different_Admin_Portal_Automation_Suite
 
 This is Automation project for TestCafe E2E testing, this seed rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
@@ -25,7 +25,7 @@ $ git clone https://github.com/hmilroy/TestCafe-different-admin-portal-framework
 
 Then go in to the to the cloned directory and install dependencies and build the project by running the following commands
 ```sh
-$ cd TestCafe-Seed
+$ cd TestCafe-project
 $ npm install
 ```
 
@@ -43,28 +43,30 @@ If you only need to run in specific browser please execute with browser name as 
 
 ##### For Chrome
 ```sh
-$ BROWSER=chrome npm run e2e
+$ testcafe chrome e2e
 ```
-
 ##### For Firefox
 ```sh
-$ BROWSER=firefox npm run e2e
+$ testcafe firefox e2e
 ```
+##### Run tests with HTML Reporting
+$ testcafe chrome run e2e --reporter html:/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/test-reports/Report_Name.html
+
 ##### For Chrome Mobile Emulators
 ```sh
-$ BROWSER="chrome:emulation:device=iphone 6" npm run e2e
+$ testcafe chrome::emulation:device=iphone 6 run e2e
 ```
-If you are unable to execute npm commands, you can execute TestCafe directly.
-```sh
-$ node node_modules/testcafe/bin/testcafe.js $BROWSER tests/e2e/**/index.spec.js
-```
+##### Remote Device Execution
 
-##### Mobile and Remote Device Execution
-
-If you need to run test cases in mobile or remote devices please execute following command, it will generate QR code then you can scan that and run test in your mobile device.
+If you need to run test cases in remote devices please execute following command, it will generate URL then you can navigate to that and run test in your remote device.
 ```sh
-$ npm run e2e-remote
+$ testcafe remote e2e  
 ```
 E2E  tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
+
+##### Mobile Device Execution using QR Code
+If you need to run test cases in mobile devices please execute following command, it will generate QR code then you can scan that and run test in your mobile device
+```sh
+$ testcafe remote e2e --qr-code
 
 <br>

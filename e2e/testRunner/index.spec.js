@@ -29,19 +29,19 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 ////-------(Working correctly)
-test('End to End test >> Property create', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for(var i=0; i<10;i++){
-    await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[0]);
-    await addLeaseComponent.execute(t.fixtureCtx.data.addLease[0]);
-    await addTenantComponent.execute(t.fixtureCtx.data.addTenant[0]);
-    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+// test('End to End test >> Property create', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for(var i=0; i<10;i++){
+//     await addPropertyComponent.execute(t.fixtureCtx.data.addMultilpeProperties[0]);
+//     await addLeaseComponent.execute(t.fixtureCtx.data.addLease[0]);
+//     await addTenantComponent.execute(t.fixtureCtx.data.addTenant[0]);
+//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
 
-    console.log("Property create completed");
-    }
+//     console.log("Property create completed");
+//     }
 
-}
-);
+// }
+// );
 
 ////-------(Working correctly)
 // test('Add Supplier funtionality', async () => {
@@ -100,12 +100,12 @@ test('End to End test >> Property create', async () => {
 // });
 
 // //--------(Working correctly)
-// test('Add Multiple properties funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addMultilpeProperties) {
-//         await addPropertyComponent.execute(data);
-//     }
-// });
+test('Add Multiple properties funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for (let data of t.fixtureCtx.data.addMultilpeProperties) {
+        await addPropertyComponent.execute(data);
+    }
+});
 
 //================================================================================================
 
