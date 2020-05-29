@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 # TestCafe_Different_Admin_Portal_Automation_Suite
+=======
+# TestCafe Automation Suite for Different Admin Portal
+>>>>>>> 9b8b6960cc4b6a3b3b2e76f631a99df04d6d05ed
 
-This is Automation project for TestCafe E2E testing, this seed rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
+This is TestCafe Automation Suite for Different Admin Portal, this framework rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
 We use [TestCafe](https://github.com/DevExpress/testcafe) as our UI automation framework.
 
@@ -55,9 +59,19 @@ $ testcafe chrome run e2e --reporter html:/home/milroy/TestCafe_Different_Admin_
 ##### For Chrome Mobile Emulators
 ```sh
 $ testcafe chrome::emulation:device=iphone 6 run e2e
+<<<<<<< HEAD
+=======
 ```
 ##### Remote Device Execution
 
+If you need to run test cases in remote devices please execute following command, it will generate URL then you can navigate to that and run test in your remote device.
+```sh
+$ testcafe remote e2e  
+>>>>>>> 9b8b6960cc4b6a3b3b2e76f631a99df04d6d05ed
+```
+##### Remote Device Execution
+
+<<<<<<< HEAD
 If you need to run test cases in remote devices please execute following command, it will generate URL then you can navigate to that and run test in your remote device.
 ```sh
 $ testcafe remote e2e  
@@ -69,4 +83,13 @@ If you need to run test cases in mobile devices please execute following command
 ```sh
 $ testcafe remote e2e --qr-code
 
+=======
+
+##### Mobile Device Execution using QR Code
+If you need to run test cases in mobile devices please execute following command, it will generate QR code then you can scan that and run test in your mobile device
+```sh
+$ testcafe remote e2e --qr-code
+```
+E2E  tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
+>>>>>>> 9b8b6960cc4b6a3b3b2e76f631a99df04d6d05ed
 <br>
