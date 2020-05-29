@@ -7,7 +7,7 @@
     "e2e": "BROWSER=${BROWSER:-all}; node node_modules/testcafe/bin/testcafe.js $BROWSER **/**/index.spec.js --skip-js-errors --reporter html-testrail",
     "e2e-remote": "node node_modules/testcafe/bin/testcafe.js remote **/**/index.spec.js --qr-code --skip-js-errors --reporter html-testrail"
   },
-  "author": "Hasitha Gamage",
+  "author": "Milroy Perera",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.3",
