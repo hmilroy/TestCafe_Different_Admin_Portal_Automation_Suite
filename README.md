@@ -5,7 +5,7 @@ This is TestCafe Automation Suite for Different Admin Portal, this framework ric
 We use [TestCafe](https://github.com/DevExpress/testcafe) as our UI automation framework.
 These tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
 
-#### _Code/Folder Structure_//test
+#### _Code/Folder Structure_/test
 
 This testcafe project contains following code/folder structure.
 * `components/` - contains all the reusable entities
@@ -50,7 +50,9 @@ $ testcafe chrome e2e
 $ testcafe firefox e2e
 ```
 ##### Run tests with HTML Reporting
+```sh
 $ testcafe chrome run e2e --reporter html:/home/milroy/TestCafe_Different_Admin_Portal_Automation_Suite/test-reports/Report_Name.html
+```
 
 ##### For Chrome Mobile Emulators
 ```sh
@@ -81,6 +83,6 @@ If you need to run test cases in mobile devices please execute following command
 $ testcafe remote e2e --qr-code
 ```
 
-E2E  tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
+<img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="200">
 
 <br>
