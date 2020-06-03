@@ -44,20 +44,20 @@ const propertyTabComponent = new components.propertyTabComponent();
 // );
 
 ////-------(Working correctly)
-test('Add Supplier funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for (let data of t.fixtureCtx.data.addSupplier) {
-        await addSupplierComponent.execute(data);
-    }
-});
+// test('Add Supplier funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for (let data of t.fixtureCtx.data.addSupplier) {
+//         await addSupplierComponent.execute(data);
+//     }
+// });
 
 
 //--------(Working correctly)
-// test('Add keys funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
-//     }
-// );
+test('Add keys funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+    }
+);
 
 
 // //-------(Working correctly)

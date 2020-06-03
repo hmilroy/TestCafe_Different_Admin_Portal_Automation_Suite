@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# TestCafe_Different_Admin_Portal_Automation_Suite
-=======
+<<<<<<< HEAD 
 # TestCafe Automation Suite for Different Admin Portal
 >>>>>>> 9b8b6960cc4b6a3b3b2e76f631a99df04d6d05ed
 

@@ -41,17 +41,16 @@ class addSupplierComponent extends BaseComponent {
     }
     await t.typeText(this.website, data.website);
 
-    const category = data.category.toLowerCase();
-    await t
+    const category = data.category.toLowerCase()
       .click(this[category])
-      .typeText(this.calloutfee, data.calloutfee)
 
+      .typeText(this.calloutfee, data.calloutfee)
       .typeText(this.emergehcycallfee, data.emergehcycallfee)
       .typeText(this.notes, data.notes);
 
-    const servicearea = data.servicearea.toLowerCase();
-    await t
+    const servicearea = data.servicearea.toLowerCase()
       .click(this[servicearea])
+      
       .click(this.isgoodforurgentrequests)
       .click(this.isavailableonweekends)
       .click(this.isavailableoutsidenormalhours)
