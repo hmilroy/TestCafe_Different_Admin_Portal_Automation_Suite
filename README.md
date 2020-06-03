@@ -3,7 +3,7 @@
 This is TestCafe Automation Suite for Different Admin Portal, this framework rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
 We use [TestCafe](https://github.com/DevExpress/testcafe) as our UI automation framework.
-
+These tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
 
 #### _Code/Folder Structure_//test
 
@@ -70,8 +70,6 @@ If you need to run test cases in remote devices please execute following command
 ```sh
 $ testcafe remote e2e  
 ```
-E2E  tests are powered with <img src="http://mherman.org/assets/img/blog/testcafe.png" alt="TestCafe" width="100">
-
 ##### Mobile Device Execution using QR Code
 If you need to run test cases in mobile devices please execute following command, it will generate QR code then you can scan that and run test in your mobile device
 ```sh
