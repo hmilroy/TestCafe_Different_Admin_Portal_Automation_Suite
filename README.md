@@ -1,6 +1,4 @@
-<<<<<<< HEAD 
 # TestCafe Automation Suite for Different Admin Portal
->>>>>>> 9b8b6960cc4b6a3b3b2e76f631a99df04d6d05ed
 
 This is TestCafe Automation Suite for Different Admin Portal, this framework rich with lots of features (ex- Data Handling, Config Handling and etc) which helps engineers to continue their tasks easily.
 
