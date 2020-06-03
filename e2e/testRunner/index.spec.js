@@ -44,12 +44,12 @@ const propertyTabComponent = new components.propertyTabComponent();
 // );
 
 ////-------(Working correctly)
-// test('Add Supplier funtionality', async () => {
-//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-//     for (let data of t.fixtureCtx.data.addSupplier) {
-//         await addSupplierComponent.execute(data);
-//     }
-// });
+test('Add Supplier funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for (let data of t.fixtureCtx.data.addSupplier) {
+        await addSupplierComponent.execute(data);
+    }
+});
 
 
 //--------(Working correctly)
@@ -61,12 +61,12 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 // //-------(Working correctly)
- test('Search properties funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    for(let data of t.fixtureCtx.data.search){
-        await searchComponent.execute(data);
-    }         
-});
+//  test('Search properties funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     for(let data of t.fixtureCtx.data.search){
+//         await searchComponent.execute(data);
+//     }         
+// });
 
 // //--------(Working correctly)
 // test('Fill Property Tab funtionality', async () => {
@@ -110,29 +110,12 @@ const propertyTabComponent = new components.propertyTabComponent();
 //================================================================================================
 
 
-
-
-
-
-
-
 // test('Add inspections funtionality', async () => {
 //     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
 //     for (let data of t.fixtureCtx.data.addInspections) {
 //         await addInspectionsComponent.execute(data);
 //     }
 // });
-
-
-
-
-
-
-
-
-
-
-
 
 
 

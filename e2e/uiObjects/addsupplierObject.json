@@ -58,15 +58,116 @@
           "advisory": {
             "selector": "input[name = Advisory]"
           },
+
+          "buildingmanager": {
+            "selector": "input[name = 'Building Manager']"
+          },
+
           "council": {
             "selector": "input[name = Council]"
           },
+
           "insurance": {
             "selector": "input[name = Insurance]"
           },
 
-          "maintenance": {
-            "selector": "input[name = Maintenance]"
+          "ac": {
+            "selector": "input[name = AC]"
+          },
+
+          "applianceinstalls": {
+            "selector": "input[name = 'Appliance Installs']"
+          },
+          "appliancerepairs": {
+            "selector": "input[name = 'Appliance Repairs']"
+          },
+
+          "blinds": {
+            "selector": "input[name = Blinds]"
+          },
+
+          "builder": {
+            "selector": "input[name = Builder]"
+          },
+
+          "cleaners": {
+            "selector": "input[name = Cleaners]"
+          },
+
+          "electrical": {
+            "selector": "input[name = Electrical]"
+          },
+
+          "fence": {
+            "selector": "input[name = Fence]"
+          },
+
+          "flooring": {
+            "selector": "input[name = Flooring]"
+          },
+
+          "garagedoor": {
+            "selector": "input[name = 'Garage Door']"
+          },
+
+          "glazier": {
+            "selector": "input[name = Glazier]"
+          },
+
+          "handyman": {
+            "selector": "input[name = Handyman]"
+          },
+
+          "heating": {
+            "selector": "input[name = Heating]"
+          },
+
+          "hotWater": {
+            "selector": "input[name = 'Hot Water']"
+          },
+
+          "lawn/gardening": {
+            "selector": "input[name = 'Lawn/Gardening']"
+          },
+
+          "locksmith": {
+            "selector": "input[name = Locksmith]"
+          },
+
+          "mould": {
+            "selector": "input[name = Mould]"
+          },
+
+          "painting": {
+            "selector": "input[name = Painting]"
+          },
+
+          "pestcontrol": {
+            "selector": "input[name = 'Pest Control']"
+          },
+
+          "plumbing": {
+            "selector": "input[name = Plumbing]"
+          },
+
+          "pool": {
+            "selector": "input[name = Pool]"
+          },
+
+          "removalist": {
+            "selector": "input[name = Removalist]"
+          },
+
+          "security": {
+            "selector": "input[name = Security]"
+          },
+
+          "smokealarms": {
+            "selector": "input[name = 'Smoke Alarms']"
+          },
+
+          "solarpanels": {
+            "selector": "input[name = 'Solar Panels']"
           },
 
           "marketing": {
@@ -82,7 +183,7 @@
           },
 
           "water": {
-            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.business-category-multi-select > div:nth-child(2) > div > div:nth-child(8) > div.level-1-categories > input[type=checkbox]"
+            "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div.business-category-multi-select > div:nth-child(2) > div > div:nth-child(9) > div.level-1-categories > input[type=checkbox]"
           },
 
           "nsw": {
@@ -134,7 +235,7 @@
           },
           "upload": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div:nth-child(1) > div:nth-child(22) > div > div > div > div"
-          },             
+          },
           "savebutton": {
             "selector": "#differentApp > div > div.content-dock > div > div > form > div.inner-form > div.person-role-form > div > button.button.button_main"
           }
