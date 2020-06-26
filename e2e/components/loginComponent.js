@@ -30,6 +30,7 @@ class LoginComponent extends BaseComponent {
         await t
 
             .maximizeWindow()
+            .wait(2000)
             .click(this.buttonSignInWithGoogle)
             .typeText(this.inputEmail, data.email)
             .wait(2000)

@@ -1,7 +1,3 @@
-/**
- * @file Login Component.
- * @author Hasitha Gamage
- */
 "use strict";
 
 import { Selector, t } from "testcafe";

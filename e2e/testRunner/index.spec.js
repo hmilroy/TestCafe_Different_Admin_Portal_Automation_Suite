@@ -25,6 +25,19 @@ const addTenantComponent = new components.addTenantComponent();
 const addInspectionsComponent = new components.addInspectionsComponent();
 const keysComponent = new components.keysComponent();
 const propertyTabComponent = new components.propertyTabComponent();
+const ownerMaaSignComponent = new components.ownerMaaSignComponent();
+
+
+
+test('Owner MAA sign funtionality', async () => {
+    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+    for (let data of t.fixtureCtx.data.ownerMaa) {
+        await ownerMaaSignComponent.execute(data);
+    }
+});
+
+
+
 
 
 
@@ -39,7 +52,6 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 //     console.log("Property create completed");
 //     }
-
 // }
 // );
 
@@ -53,11 +65,11 @@ const propertyTabComponent = new components.propertyTabComponent();
 
 
 //--------(Working correctly)
-test('Add keys funtionality', async () => {
-    await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
-    await keysComponent.execute(t.fixtureCtx.data.keys[0]);
-    }
-);
+// test('Add keys funtionality', async () => {
+//     await loginComponent.execute(t.fixtureCtx.data.userLogin[0]);
+//     await keysComponent.execute(t.fixtureCtx.data.keys[0]);
+//     }
+// );
 
 
 // //-------(Working correctly)
@@ -120,4 +132,4 @@ test('Add keys funtionality', async () => {
 
 
 
-//test run command : testcafe chrome run e2e
+////test run command : testcafe chrome run e2e
